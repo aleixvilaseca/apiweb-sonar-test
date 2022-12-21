@@ -37,19 +37,14 @@ def get_severities(request, key_list, sonar, total):
                 
                 api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=BLOCKER,CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-                api_url_sev = api_url_sev.json()
-                api_url_sev = api_url_sev['total']
-                api_url_sev = str(api_url_sev)
+                if api_url_sev.status_code == 200:
+                    data = api_url_sev.json()
+                    total = data['total']
+                    with open('reports/vulnerabilities.json', 'a') as f:
+                        f.write(' %s: %s \r      ' %(key, total))    
+                else:
+                    print('Error: %s' %(api_url_sev.status_code))               
                 
-                for total in api_url_sev:
-                    if total is not None:
-                        total = " ".join(key).replace(" ", ""), total.split(',')
-                        total = str(total).replace('[', '').replace(']', '').replace("'", "").replace("(", " ").replace(")", " ").strip()
-
-                        metric_file = open("reports/severity_list.json", "a")
-                        metric_file.write(total)
-                        metric_file.write("\n")
-                        metric_file.close()
                         
     except Exception as error:
         print(error)
