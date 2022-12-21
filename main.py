@@ -13,8 +13,9 @@ from os.path import exists
 from django.http import HttpResponse
 
 
-def get_severities(request, key_list, sonar): 
-
+def get_severities(request, key_list, sonar, total): 
+    
+    """Get the number of vulnerabilities per project and write them to a file"""
     print('Connection to Sonarqube')
     url = "https://codi.qualitat.solucions.gencat.cat/"
     username = constants.SONAR_USER
@@ -28,34 +29,31 @@ def get_severities(request, key_list, sonar):
     for key in sonar:
         key_list.append(key['key']) # append the project key to a list
 
-    metric_file = open("reports/project_list.json", "w") # write the security data to a file so we can use it later
-    metric_file.write(json.dumps(key_list))
-    metric_file.close()
-
-    key_list = str(key_list).replace('[', '').replace(']', '').replace("'", "").replace(" ", "") # remove the brackets from the list (not needed for the API
-    key_list = key_list.split(',') # split the list into a list of strings
+    key_list = str(key_list).replace('[', '').replace(']', '').replace("'", "").replace(" ", "").split(',') # remove the brackets from the list (not needed for the API
 
     try:
         for key in key_list:
             if key is not None:
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=BLOCKER,CRITICAL" %(key), auth=HTTPBasicAuth(username, password))
-                api_url_sev.json()
+                
+                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=BLOCKER,CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-            """data_file = open("reports/severities1.json", "w") # write the security data to a file so we can use it later
-            data_file.write(json.dumps(api_url_sev.json()))
-            data_file.close()"""
+                api_url_sev = api_url_sev.json()
+                api_url_sev = api_url_sev['total']
+                api_url_sev = str(api_url_sev)
+                
+                for total in api_url_sev:
+                    if total is not None:
+                        total = " ".join(key).replace(" ", ""), total.split(',')
+                        total = str(total).replace('[', '').replace(']', '').replace("'", "").replace("(", " ").replace(")", " ").strip()
 
+                        metric_file = open("reports/severity_list.json", "a")
+                        metric_file.write(total)
+                        metric_file.write("\n")
+                        metric_file.close()
+                        
     except Exception as error:
         print(error)
-
-    """api_url_sev = list(api_url_sev)
-    total = []
-    for total in api_url_sev:
-        total.append(total['total']), ",".join(total, key)"""
-
     
-
-
 if __name__ == "__main__":
 
-    get_severities(request=None, key_list=['key'], sonar=None)
+    get_severities(request=None, key_list=['key'], sonar=None, total=['total'])
