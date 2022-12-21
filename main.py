@@ -31,16 +31,31 @@ def get_severities(request, key_list, sonar, total):
 
     key_list = str(key_list).replace('[', '').replace(']', '').replace("'", "").replace(" ", "").split(',') # remove the brackets from the list (not needed for the API
 
+    print('Getting the number of vulnerabilities per project')
+
     try:
         for key in key_list:
             if key is not None:
                 
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=BLOCKER,CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=BLOCKER&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_sev.status_code == 200:
                     data = api_url_sev.json()
                     total = data['total']
-                    with open('reports/vulnerabilities.json', 'a') as f:
+                    with open('reports/vulnerabilities-blocker.json', 'a') as f:
+                        f.write(' %s: %s \r      ' %(key, total))    
+                else:
+                    print('Error: %s' %(api_url_sev.status_code))        
+
+        for key in key_list:
+            if key is not None:
+                
+                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+
+                if api_url_sev.status_code == 200:
+                    data = api_url_sev.json()
+                    total = data['total']
+                    with open('reports/vulnerabilities-critical.json', 'a') as f:
                         f.write(' %s: %s \r      ' %(key, total))    
                 else:
                     print('Error: %s' %(api_url_sev.status_code))               
