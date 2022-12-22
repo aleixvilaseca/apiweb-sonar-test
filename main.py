@@ -42,7 +42,7 @@ def get_severities(request, key_list, sonar, total):
                 if api_url_sev.status_code == 200:
                     data = api_url_sev.json()
                     total = data['total']
-                    with open('reports/vulnerabilities-blocker.json', 'a') as f:
+                    with open('reports/vulnerabilities-blocker.txt', 'a') as f:
                         f.write(' %s: %s \r      ' %(key, total))    
                 else:
                     print('Error: %s' %(api_url_sev.status_code))        
@@ -55,7 +55,7 @@ def get_severities(request, key_list, sonar, total):
                 if api_url_sev.status_code == 200:
                     data = api_url_sev.json()
                     total = data['total']
-                    with open('reports/vulnerabilities-critical.json', 'a') as f:
+                    with open('reports/vulnerabilities-critical.txt', 'a') as f:
                         f.write(' %s: %s \r      ' %(key, total))    
                 else:
                     print('Error: %s' %(api_url_sev.status_code))               
