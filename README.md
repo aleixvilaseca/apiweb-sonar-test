@@ -1,4 +1,4 @@
-# CTTI Sonarqube reporting
+# Sonarqube API_extract critical & blocker vulnerability
 
 ### Prerequisites
 
