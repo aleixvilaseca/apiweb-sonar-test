@@ -1,1410 +1,0 @@
-       0006-PRC: 0 
-       0007-PRF: 3 
-       0012-dar_punic: 0 
-       0012-PbaseALE: 0 
-       0012-pbasecd: 0 
-       0012-PbaseDR: 0 
-       0012-PbaseGC: 0 
-       0012-PbaseGD: 0 
-       0012-PbasePEQ: 0 
-       0012-PbaseRN: 0 
-       0012-pbaseud: 0 
-       0012-PbaseWS: 0 
-       0012-Punic: 0 
-       0012-PunicDP: 0 
-       0012-PunicPG: 0 
-       0012-PunicPUA: 0 
-       0014-RARE: 0 
-       0018-ROCAMP: 0 
-       0019-ROESP: 0 
-       0020-ROMA: 8 
-       0021-ervc-jasperfontslib: 0 
-       0021-ervc-rampartlib: 0 
-       0021-eRVC-utils: 0 
-       0028-SGI: 2 
-       0030-rvcsol: 2 
-       0030-rvcws: 0 
-       0040-XCAC: 39 
-       0043-ANICOM: 3 
-       0043-anicomPublic: 3 
-       0046-ARECRE: 1 
-       0047-ARF: 0 
-       0049-ADVI: 2 
-       0051-ASI: 0 
-       0068-CMN: 1 
-       0069-CMV: 3 
-       0072-COM: 0 
-       0073-CON: 17 
-       0075-CPE: 0 
-       0080-DEA: 6 
-       0085-DUW: 0 
-       0087-ECA: 6 
-       0088-ECNP: 0 
-       0088-ecnp-back: 2 
-       0088-ecnppublic: 0 
-       0088-ecnppublic-bs002: 0 
-       0088-ecnppublic-bs003: 0 
-       0089-EGT: 0 
-       0093-AFS: 9 
-       0097-FRUIT: 3 
-       0102-GEAI: 16 
-       0103-GEN: 1 
-       0106-GIA: 11 
-       0107-GIDARP: 0 
-       0108-GIN-bs001: 15 
-       0108-GIN-bs003: 0 
-       0108-GIN-bs004: 0 
-       0116-IIA: 3 
-       0117-INDEXA: 1 
-       0121-LLM: 0 
-       0127-NZO: 1 
-       0128-OLI: 0 
-       0131-OPNET: 0 
-       0132-PARCS: 1 
-       0134-PER: 0 
-       0136-PERFOC: 1 
-       0137-GFE: 1 
-       0140-GDN-GPS: 0 
-       0158-SIG_CAR: 0 
-       0176-Catalunya.com-angular: 0 
-       0187-canigo.core: 0 
-       0187-canigo.integration.antivirus: 0 
-       0187-canigo.integration.avisosalertes.pica: 0 
-       0187-canigo.integration.dni.pica: 0 
-       0187-canigo.integration.icc: 0 
-       0187-canigo.integration.icc.datatypes: 0 
-       0187-canigo.integration.notificacions.electroniques: 0 
-       0187-canigo.integration.padro.pica: 0 
-       0187-canigo.integration.pica: 0 
-       0187-canigo.integration.pica.avisosalertes.support: 0 
-       0187-canigo.integration.pica.padro.support: 0 
-       0187-canigo.integration.pica.tributs.support: 0 
-       0187-canigo.integration.psgd: 0 
-       0187-canigo.integration.psis: 0 
-       0187-canigo.integration.sarcat: 0 
-       0187-canigo.integration.sarcat.pica: 0 
-       0187-canigo.integration.sarcat.planificat: 0 
-       0187-canigo.integration.sarcat.suport: 0 
-       0187-canigo.integration.sgde: 0 
-       0187-canigo.integration.sgde.support: 0 
-       0187-canigo.integration.ssc: 0 
-       0187-canigo.integration.tributs.pica: 0 
-       0187-canigo.operation.instrumentation: 0 
-       0187-canigo.operation.logging: 0 
-       0187-canigo.persistence.core: 0 
-       0187-canigo.persistence.jpa: 0 
-       0187-canigo.persistence.mongodb: 0 
-       0187-canigo.root: 0 
-       0187-canigo.root-jdk11: 0 
-       0187-canigo.security: 0 
-       0187-canigo.security.saml: 0 
-       0187-canigo.security.saml.bridge: 0 
-       0187-canigo.security.saml.rest: 0 
-       0187-canigo.support.fileupload: 0 
-       0187-canigo.support.lopd: 0 
-       0187-canigo.support.mailing: 0 
-       0187-canigo.support.merging: 0 
-       0187-canigo.support.ole: 0 
-       0187-canigo.support.resizeimg: 0 
-       0187-canigo.support.sftp: 0 
-       0187-canigo.test: 0 
-       0187-canigo.test-jdk11: 0 
-       0187-canigo.web.core: 0 
-       0187-canigo.web.rs: 0 
-       0189-STD2-Conversio-core: 0 
-       0189-STD2-core: 0 
-       0192-0012-PbaseALE: 0 
-       0192-0019-roesp: 3 
-       0192-0019-ROESP: 0 
-       0192-0030-rvcws: 0 
-       0192-0176-catalunya.com-angular: 0 
-       0192-0205-portalsts_atc: 0 
-       0192-0206-tributs: 0 
-       0192-0227-jovcens: 2 
-       0192-0227-jovcensweb: 0 
-       0192-0280-jovgeij: 3 
-       0192-0280-jovgeijweb: 2 
-       0192-0292-logintoaplclient: 0 
-       0192-0294-jovnotis: 3 
-       0192-0294-jovnotisweb: 3 
-       0192-0323-dcam: 3 
-       0192-0323-scvv: 0 
-       0192-0342-JOV_TITUS: 2 
-       0192-0434-cerca-oficines-lib: 0 
-       0192-0434-cita-previa-app: 0 
-       0192-0434-cita-previa-lib: 0 
-       0192-0434-gsitassemblies: 0 
-       0192-0434-gsitfa: 0 
-       0192-0435-gestor-contactes-lib: 0 
-       0192-0435-sarcat-lib: 0 
-       0192-0435-seu-client: 0 
-       0192-0435-ta-backend: 5 
-       0192-0435-ta-batch: 3 
-       0192-0435-ta-frontend: 0 
-       0192-0435-ta-scheme: 0 
-       0192-0435-tramitacio-lib: 0 
-       0192-0441-wallet-bbdd: 0 
-       0192-0559-consolidacio_fons_museus: 1 
-       0192-0559-consol_pub: 0 
-       0192-0559-consol_pub_front: 0 
-       0192-0559-consol_pub_front-bs002: 0 
-       0192-0559-consol_pub_front-bs003: 0 
-       0192-0559-job_peces: 0 
-       0192-0559-jobs_con: 0 
-       0192-0559-jobs_ingesta: 0 
-       0192-0559-jobs_publicacio: 0 
-       0192-0559-webservice_jobs: 0 
-       0192-0829-gefact-alfresco-alertesui: 0 
-       0192-0829-gefact-alfresco-backoffice: 36 
-       0192-0829-gefact-alfresco-core: 0 
-       0192-0829-gefact-alfresco-facturae: 2 
-       0192-0829-gefact-alfresco-rest: 1 
-       0192-0829-gefact-alfresco-webconsulta: 0 
-       0192-0829-gefact-alfresco-webservice: 0 
-       0192-0848-ControlProcessosPO: 0 
-       0192-0913-gestor-documental-service: 4 
-       0192-0988-lib-ogebase-wl12: 0 
-       0192-0988-lib-ogecataleg-wl12: 1 
-       0192-0988-lib-teimonitoritzacio-wl12: 0 
-       0192-0988-lib-teischemas-wl12: 0 
-       0192-0988-lib-teiwordservice-wl12: 1 
-       0192-0988-mti-brms-model: 0 
-       0192-0988-mti-brms-service: 0 
-       0192-0988-ogeadmin-wl12: 2 
-       0192-0988-tei-brms-service: 0 
-       0192-0988-teiprocessos-wl12: 11 
-       0192-0988-tei-wl12: 11 
-       0192-0988-tei_ws-wl12: 3 
-       0192-0989-mti-wl12: 3 
-       0192-0989-ogebase-wl12: 0 
-       0192-0989-ogecataleg-wl12: 1 
-       0192-1134-marsupial: 0 
-       0192-1160-ATRI-backend: 0 
-       0192-1200-gexam: 0 
-       0192-1216_limits: 0 
-       0192-1276-etc-lib-allergies: 0 
-       0192-1276-etc-lib-case-summary: 0 
-       0192-1276-etc-lib-clinical-course: 0 
-       0192-1276-etc-lib-context-info: 0 
-       0192-1276-etc-lib-core: 0 
-       0192-1276-etc-lib-data-register: 0 
-       0192-1276-etc-lib-diagnostics: 0 
-       0192-1276-etc-lib-document-viewer: 0 
-       0192-1276-etc-lib-feedback: 0 
-       0192-1276-etc-lib-medical-report: 0 
-       0192-1276-etc-lib-medication: 0 
-       0192-1276-etc-lib-medication-planner: 0 
-       0192-1276-etc-lib-patient: 0 
-       0192-1276-etc-lib-patient-chart-core: 0 
-       0192-1276-etc-lib-patient-history: 0 
-       0192-1276-etc-lib-patient-history-core: 0 
-       0192-1276-etc-lib-petitory: 0 
-       0192-1276-etc-lib-precedents: 0 
-       0192-1276-etc-lib-professional: 0 
-       0192-1276-etc-lib-proof-warnings: 0 
-       0192-1276-etc-lib-surgical-interventions: 0 
-       0192-1276_etpat-backend-common_export: 0 
-       0192-1370-gdo: 0 
-       0192-1370-GDO: 3 
-       0192-1370-TRA-API: 0 
-       0192-1370-TRACOM: 0 
-       0192-1478-1478_EsportFederat_front-end: 0 
-       0192-1478_esportfederat_front-end: 0 
-       0192-1561-backend_java: 0 
-       0192-1561-frontend-angular: 0 
-       0192-1668-core-admin: 0 
-       0192-1668-sicas-admin: 0 
-       0192-1668-sicas-agenda: 0 
-       0192-1668-sicas-auxiliares: 0 
-       0192-1668-sicas-bui001: 0 
-       0192-1668-sicas-bui002: 0 
-       0192-1668-sicas-bui003: 0 
-       0192-1668-sicas-bui004: 0 
-       0192-1668-sicas-bui005: 0 
-       0192-1668-sicas-bui006: 0 
-       0192-1668-sicas-bui007: 0 
-       0192-1668-sicas-bui008: 0 
-       0192-1668-sicas-bui009: 0 
-       0192-1668-sicas-bui010: 0 
-       0192-1668-sicas-bui011: 0 
-       0192-1668-sicas-bui012: 0 
-       0192-1668-sicas-bui013: 0 
-       0192-1668-sicas-bui014: 0 
-       0192-1668-sicas-bui015: 0 
-       0192-1668-sicas-bui016: 2 
-       0192-1668-sicas-bui017: 0 
-       0192-1668-sicas-bui018: 0 
-       0192-1668-sicas-bui019: 0 
-       0192-1668-sicas-bui020: 0 
-       0192-1668-sicas-bui021: 0 
-       0192-1668-sicas-bui022: 0 
-       0192-1668-sicas-bui023: 0 
-       0192-1668-sicas-bui024: 0 
-       0192-1668-sicas-bui025: 0 
-       0192-1668-sicas-bui026: 0 
-       0192-1668-sicas-bui027: 0 
-       0192-1668-sicas-bui028: 0 
-       0192-1668-sicas-bui029: 0 
-       0192-1668-sicas-bui030: 0 
-       0192-1668-sicas-busquedaparametrizada: 2 
-       0192-1668-sicas-candidato: 0 
-       0192-1668-sicas-clientedatos: 0 
-       0192-1668-sicas-comunicaciones: 0 
-       0192-1668-sicas-configuracionbusquedas: 0 
-       0192-1668-sicas-contrato: 0 
-       0192-1668-sicas-controlacceso: 0 
-       0192-1668-sicas-dbkona: 0 
-       0192-1668-sicas-delegado: 0 
-       0192-1668-sicas-demanda: 0 
-       0192-1668-sicas-entidadescomunes: 0 
-       0192-1668-sicas-estadisticas: 0 
-       0192-1668-sicas-gestorcomunicados: 0 
-       0192-1668-sicas-infointer: 0 
-       0192-1668-sicas-informes: 0 
-       0192-1668-sicas-inicio: 0 
-       0192-1668-sicas-modulos: 0 
-       0192-1668-sicas-oferente: 0 
-       0192-1668-sicas-oferta: 0 
-       0192-1668-sicas-personafisica: 0 
-       0192-1668-sicas-pica: 0 
-       0192-1668-sicas-procesosautomaticos: 0 
-       0192-1668-sicas-rest: 0 
-       0192-1668-sicas-serviciosexternos: 0 
-       0192-1668-sicas-sithinlet: 0 
-       0192-1668-sicas-solicitudbusqueda: 0 
-       0192-1668-sicas-webservices: 0 
-       0192-1669-bdi_web: 0 
-       0192-1669-bdi_web_database: 0 
-       0192-1691-ireneu: 6 
-       0192-1700-qpq: 0 
-       0192-1889-cloud-hes-visor-bbdd: 0 
-       0192-2138-ooproxy: 0 
-       0192-2138-REE: 0 
-       0192-2138-REE_WS: 0 
-       0192-2506-avisos: 0 
-       0192-2506-canal_empresa_common: 0 
-       0192-2506-canal_empresa_eina: 0 
-       0192-2506-canal_empresa_portal: 6 
-       0192-2506-canal_empresa_serveis: 0 
-       0192-2506-ce-backend: 4 
-       0192-2510-namante: 0 
-       0192-2510-namaste: 0 
-       0192-2579-CPPAC: 0 
-       0192-2579-CPPAC-bs001: 0 
-       0192-2579-CPPAC-bs002: 0 
-       0192-2632-web-service-spe: 0 
-       0192-2657-tais: 5 
-       0192-2658-SCDIAP: 0 
-       0192-2658-SCDIAP-ADMIN: 0 
-       0192-2680-ARQ-CAN3.4_ANG-ra-ng: 0 
-       0192-2700-TAP-Frontend: 0 
-       0192-2703-GEDAC: 0 
-       0192-2927-geu: 11 
-       0192-2994-sjc: 3 
-       0192-2996-convocatories-bbdd: 0 
-       0192-3021-portal-ciutada-back: 0 
-       0192-3022-cron-dates: 0 
-       0192-3022-esocial-batch: 0 
-       0192-3022-esocial-dynamic-blocks: 0 
-       0192-3022-esocial-jpa-repositories: 0 
-       0192-3022-esocial-properties: 0 
-       0192-3022-esocial-security-efs: 0 
-       0192-3022-esocial-services: 0 
-       0192-3022-portal-empleat-public-back: 0 
-       0192-3022-portal-empleat-public-front: 0 
-       0192-3022-Scripts-DCR: 0 
-       0192-3024-esocial-administracio-backend: 0 
-       0192-3024-esocialArchitecture: 0 
-       0192-3024-eSocial-Architecture-Interop: 0 
-       0192-3024-eSocial-Authorization-Services: 0 
-       0192-3024-esocial-brms-helloworld: 0 
-       0192-3024-esocial-brms-helloworld-hw001: 0 
-       0192-3024-esocial-brms-helloworld-hw002: 0 
-       0192-3024-esocial-brms-helloworld-hw003: 0 
-       0192-3024-eSocial-Core-Front: 0 
-       0192-3024-esocial-corticon-client: 0 
-       0192-3024-esocial-gicar-auth-server: 0 
-       0192-3024-esocialInterfaces: 0 
-       0192-3024-esocial-interop-core: 0 
-       0192-3024-esocial-notifications-manager: 0 
-       0192-3024-esocial-notifications-manager-bl: 0 
-       0192-3024-esocial-notifications-manager-parent: 0 
-       0192-3024-esocialPicsArchitecture: 0 
-       0192-3024-esocial-portal-administracio-front: 0 
-       0192-3024-esocial-regles-corticon: 0 
-       0192-3024-esocial-security-jwt: 0 
-       0192-3024-esocial-valid-auth-server: 0 
-       0192-3072-cejfe-bbdd: 0 
-       0192-3098-soc-expedients: 3 
-       0192-3163-rgc-web-e_formularis: 0 
-       0192-3163-rgc-web-ws: 0 
-       0192-3170_RECVTCPARENT: 0 
-       0192-3170-RECVTCPARENT: 0 
-       0192-3172-eep-backend: 25 
-       0192-3172-eep-frontend: 0 
-       0192-3172-gdoc: 0 
-       0192-3172-pesig: 0 
-       0192-3172-siae: 24 
-       0192-3172-sirh-utils: 0 
-       0192-3172-std: 0 
-       0192-3185-QuaireApp: 2 
-       0192-3201-Altran.DocumentsCreation: 0 
-       0192-3201-incasol.agilepoint: 0 
-       0192-3201-Incasol.AgilePoint: 0 
-       0192-3201-incasol.ali: 0 
-       0192-3201-incasol.ama: 0 
-       0192-3201-Incasol.CNVNET: 0 
-       0192-3201-Incasol.CoreMVC: 0 
-       0192-3201-Incasol.CoreWebApi: 0 
-       0192-3201-Incasol.EnvironmentConfigBuilder: 0 
-       0192-3201-Incasol.Gateway: 0 
-       0192-3201-Incasol.GestorDocumental: 0 
-       0192-3201-Incasol.HttpClientWrapper: 0 
-       0192-3201-Incasol.Identity: 0 
-       0192-3201-incasol.incextnet: 0 
-       0192-3201-Incasol.Infrastructure: 0 
-       0192-3201-Incasol.Infrastructure.Data: 0 
-       0192-3201-incasol.infrastructure.services: 0 
-       0192-3201-incasol.ip: 0 
-       0192-3201-incasol.ip.consumerservice: 0 
-       0192-3201-Incasol.IP.DocumentsReport: 0 
-       0192-3201-Incasol.IP.SchedulerService: 0 
-       0192-3201-incasol.ip.web: 0 
-       0192-3201-incasol.jwt: 0 
-       0192-3201-incasol.mails: 0 
-       0192-3201-incasol.mestres: 0 
-       0192-3201-Incasol.NPA: 0 
-       0192-3201-Incasol.OBI: 0 
-       0192-3201-Incasol.Sap: 0 
-       0192-3201-Incasol.Security: 0 
-       0192-3201-Incasol.SyncronizationSap.ConsumerService: 0 
-       0192-3201-Incasol.Tercers: 0 
-       0192-3201-Incasol.Tercers.ConsumerService: 0 
-       0192-3201-Incasol.Tercers.Web: 0 
-       0192-3204_EGP: 17 
-       0192-3204_EGPFRONT: 0 
-       0192-3204_EGPFRONT-build02: 0 
-       0192-3204_EGPFRONT-build03: 0 
-       0192-3215-roc-backend: 2 
-       0192-3215-roc-frontend: 0 
-       0192-3222_OBSPREU: 1 
-       0192-3227-dsocial_imv: 0 
-       0192-3272-cejfe-bbdd: 0 
-       0192-3283_gicar: 0 
-       0192-3288-gdnabackend: 9 
-       0192-3288-gdnascripts: 0 
-       0192-3288-gdnaweb: 0 
-       0192-3294-fsecat: 0 
-       0192-3294-fsecat_ui: 0 
-       0192-3294-fsecat_ui-build2: 0 
-       0192-3295-bisoc: 0 
-       0192-3295-bisoc_ui: 0 
-       0192-Incasol.OBI: 0 
-       0192-jenkins-autoservei-library: 0 
-       0192-jenkins-delegated-deployment-library: 0 
-       0192-jenkins-oficines-externes-library: 0 
-       0192-jenkins-oqual-library: 0 
-       0192-jenkins-utils-library: 0 
-       0192-prova-bbdd-oracle-cpd1: 0 
-       0192-prova-bbdd-oracle-cpd2: 0 
-       0192-prova-bbdd-postgre-cpd1: 0 
-       0192-prova-maven-library: 0 
-       0192-prova-node-library: 0 
-       0192-prova-punt-net-library: 0 
-       0192-RemedyWSClient: 0 
-       0192-repository-artifactory-cleaner: 0 
-       0192-SIC-jenkins-pipeline-library: 0 
-       0192-test-intcan-2354: 0 
-       0197-portalseguretataall_aws: 4 
-       0197-portalseguretatxcat: 3 
-       0205-bffspa: 0 
-       0205-portal_atc: 3 
-       0205-portaljobs_atc: 0 
-       0205-portalspa_atc: 0 
-       0205-portalsts_atc: 0 
-       0205-pt-apimanager-client-lib: 0 
-       0205-pt_bffspa_atc: 0 
-       0205-pt-bootstrap-mf-theme: 0 
-       0205-pt-commons-client-lib: 0 
-       0205-pt-commons-lib: 0 
-       0205-pt-dali-client-lib: 0 
-       0205-pt-documents-client-lib: 0 
-       0205-pt-gaudi-client-lib: 0 
-       0205-pt_gaudio2_atc: 7 
-       0205-pt-gestions-client-lib: 0 
-       0205-pt_jobs_atc: 1 
-       0205-pt-ongoing-client-lib: 0 
-       0205-pt-osb-client-lib: 0 
-       0205-pt-pagaments-client-lib: 0 
-       0205-pt_pasarelles_atc: 0 
-       0205-pt-presentacions-client-lib: 0 
-       0205-pt-seguretat-client-lib: 0 
-       0205-pt_seu_atc: 3 
-       0205-pt_spa_atc: 8 
-       0205-pt-tributs-client-lib: 0 
-       0205-pt-ui-components-mf-lib: 0 
-       0206-tributs: 17 
-       0227-jovcens: 2 
-       0227-jovcensweb: 0 
-       0261-frm: 0 
-       0280-jovgeij: 4 
-       0280-jovgeijweb: 2 
-       0294-jovnotis: 3 
-       0294-jovnotisweb: 3 
-       0299-PES: 0 
-       0317-0317-RUMI-FRONTEND: 0 
-       0317-rumi-simulacio-backend: 1 
-       0323-dcam: 2 
-       0323-scvv: 0 
-       0328-SGTFNM: 0 
-       0329-SGVIF: 0 
-       0331-bsfconnectorpsgd: 0 
-       0336-jov_sub: 0 
-       0337-cp_scripts: 0 
-       0341-jov_cens: 0 
-       0342-JOV_TITUS: 2 
-       0346-jovterri: 1 
-       0434-Adobe: 0 
-       0434-BBDD: 0 
-       0434-cita-previa-gestio-lib: 0 
-       0434-cita-previa-lib: 0 
-       0434-gicar-gateway: 0 
-       0434-GsitBase: 2 
-       0434-GsitCaoc: 0 
-       0434-gsitcitpre: 0 
-       0434-gsitcitpre-client: 0 
-       0434-gsitcitpre-service: 0 
-       0434-GsitCommons: 0 
-       0434-GsitCommonsSA: 0 
-       0434-gsitcommons-service: 0 
-       0434-GsitCommonsTI: 0 
-       0434-gsitconqxs: 0 
-       0434-gsitconqxs-client: 0 
-       0434-gsit-core-lib-pdf: 3 
-       0434-gsitea: 0 
-       0434-gsitfa: 0 
-       0434-gsitfc: 10 
-       0434-gsitgad: 0 
-       0434-gsitgescts: 0 
-       0434-gsitgescts-client: 0 
-       0434-gsitgescts-service: 0 
-       0434-gsitgf: 1 
-       0434-gsitmestres-service: 0 
-       0434-gsitmi: 0 
-       0434-GsitParent: 0 
-       0434-gsitparent-service: 0 
-       0434-gsit-schemas: 0 
-       0434-gsitserveis-service: 2 
-       0434-GsitSingleSignOn: 0 
-       0434-gsittraint: 1 
-       0434-gsittraint-client: 0 
-       0434-gsittraint-service: 4 
-       0434-GsitXmlBeans: 0 
-       0434-log4j-over-slf4j: 0 
-       0434-netplus: 0 
-       0434-ng-viewnext-lib: 0 
-       0434-pci-connector: 0 
-       0434-PDFSignaturesValidation: 3 
-       0434-seu-client: 0 
-       0434-valid-gateway: 0 
-       0435-gsit3-ta-frontend: 0 
-       0435-ta-backend: 5 
-       0435-ta-batch: 6 
-       0435-ta-frontend: 0 
-       0435-tramitacio-lib: 0 
-       0441-carpeta-ciutadana-backend: 0 
-       0441-carpeta-ciutadana-frontend: 0 
-       0441-gsit3-wc-citaprevia: 0 
-       0441-gsit-lib-registre-consentiments: 0 
-       0441-ovt-consulta-feble: 0 
-       0441-ovt-esborranys-html: 0 
-       0441-ovt-notificacions-i-avisos: 0 
-       0441-ovt-recordatoris-propers: 0 
-       0441-ovt-tramits-recents: 0 
-       0441-proact-api-consentiments-bbdd: 0 
-       0441-proact-api-dades-bbdd: 0 
-       0441-proact-api-serveis-bbdd: 0 
-       0441-proact-lib-commons: 0 
-       0441-proact-lib-pica-avisalert-ecorreu: 0 
-       0441-proact-lib-pica-commons: 0 
-       0441-proact-lib-pica-generics: 0 
-       0441-wallet-bbdd: 0 
-       0441-wallet-frontend-lib: 0 
-       0441-wallet-lib-commons: 0 
-       0441-wallet-pica-avisecorreu-types-master: 0 
-       0441-wallet-pica-common-types-master: 0 
-       0441-wallet-pica-connector-service-master: 0 
-       0441-wallet-pica-generic-types-master: 0 
-       0442-gsit3-core-lib-adobe: 0 
-       0442-gsit3-core-lib-citpre: 0 
-       0442-gsit3-core-lib-commons-api: 0 
-       0442-gsit3-core-lib-seu: 1 
-       0442-gsit3-core-lib-xml: 0 
-       0442-gsit3-core-pom-parent: 0 
-       0442-gsit3-core-pom-parent-api: 0 
-       0463-HUGO: 0 
-       0463-pica3-emissor-lib: 0 
-       0463-pica3-missatgeria-generica: 0 
-       0463-pica3-utils-lib: 0 
-       0463-pica3-xml: 0 
-       0492-PICEM: 0 
-       0501-consultasala_anc: 0 
-       0534-LLETRESAULES: 0 
-       0548-egipci: 0 
-       0556-TradNoOccita: 0 
-       0559-consolidacio_fons_museus: 5 
-       0559-consol_pub: 0 
-       0559-consol_pub_front: 0 
-       0559-job_peces: 0 
-       0559-jobs_con: 0 
-       0559-jobs_ingesta: 2 
-       0559-jobs_pre: 0 
-       0559-jobs_publicacio: 0 
-       0559-webservice_jobs: 0 
-       0570-cercador-invarquit-back: 0 
-       0570-cercador-invarquit-front: 0 
-       0582-cercador-invarque-back: 0 
-       0582-cercador-invarque-front: 0 
-       0597-AulaMestra: 0 
-       0618-TradOccita: 0 
-       0625-VolLlengua: 0 
-       0633-FOC: 1 
-       0635-PremsaPL: 0 
-       0648-GesCerCat: 1 
-       0664-app: 0 
-       0670-SINTESI: 0 
-       0673-SCL: 0 
-       0687-mitel-flex: 0 
-       0692-sitc: 1 
-       0703-CTWEB-bs001: 0 
-       0703-CTWEB-bs002: 0 
-       0794-EADOP: 1 
-       0794-eadop-elastic-rest: 0 
-       0794-eadop-rest: 1 
-       0794-eadop-rest-fontend: 0 
-       0794-eadop-rest-frontend: 0 
-       0819-relic-bbdd: 0 
-       0819-relic-integracions: 0 
-       0819-relic-jpa-model: 0 
-       0819-relic-shared: 0 
-       0829-GEFACT-Alfresco-BackOffice: 36 
-       0829-GEFACT-Alfresco-core: 0 
-       0829-GEFACT-Alfresco-Facturae: 2 
-       0829-GEFACT-Alfresco-REST: 0 
-       0829-GEFACT-Alfresco-WebConsulta: 0 
-       0829-GEFACT-Alfresco-WebService: 0 
-       0829-gefact-icaen-rest: 0 
-       0848-ControlProcessosPO: 0 
-       0857-ecofin-pscp2-common: 0 
-       0857-ecofin-pscp2-db: 0 
-       0857-ecofin-pscp-common: 2 
-       0857-ecofin-pscp-db: 0 
-       0863-admin-reli-backend: 1 
-       0863-admin-reli-frontend: 0 
-       0863-admin-reli-frontend-bs002: 0 
-       0863-admin-reli-frontend-bs003: 0 
-       0865-RPC: 0 
-       0866-ecofin-sd-db: 0 
-       0866-ecofin-sd-pscp-common: 0 
-       0875-suma: 1 
-       0886-eformacio: 0 
-       0886-eformacio_pre: 10 
-       0892-SECRE: 0 
-       0913-gescon: 1 
-       0913-gestor-documental-service: 4 
-       0913-pica-service: 1 
-       0918-conta: 0 
-       0945-treball-per-ocupacions: 0 
-       0950-PTR: 0 
-       0955-0955: 0 
-       0988-lib-ogebase-wl12: 0 
-       0988-lib-ogecataleg-wl12: 0 
-       0988-lib-teimonitoritzacio-wl12: 0 
-       0988-lib-teischemas-wl12: 0 
-       0988-lib-teiwordservice-wl12: 1 
-       0988-mti-brms-model: 0 
-       0988-mti-brms-service: 0 
-       0988-ogeadmin-wl12: 2 
-       0988-tei-brms-service: 0 
-       0988-teiprocessos-wl12: 4 
-       0988-tei-wl12: 1 
-       0988-tei_ws-wl12: 0 
-       0989-mti-wl12: 2 
-       0989-ogebase-wl12: 0 
-       0989-ogecataleg-wl12: 1 
-       1018-RTA_WEB: 0 
-       1018-RTT: 0 
-       1021-QEI: 0 
-       1021-qesi: 0 
-       1023-bae_admin: 0 
-       1034-GEPSE: 0 
-       1035-GSA_ACR: 0 
-       1035-GSA_CFI: 0 
-       1035-GSA_CONF: 0 
-       1035-GSA_CONS: 0 
-       1035-GSA_EEM: 0 
-       1035-GSA_EOI: 0 
-       1035-GSA_GES: 0 
-       1035-GSA_INS: 0 
-       1035-GSA_NUCLI: 0 
-       1035-GSA_PACF: 0 
-       1035-GSA_RBI: 0 
-       1037-MTC: 1 
-       1040-HST_BAL: 0 
-       1040-SII-COMU: 0 
-       1040-SII-FP: 0 
-       1040-SII-WEB: 0 
-       1040-SII-WS: 0 
-       1041-TME: 0 
-       1041-TME_2019003: 0 
-       1041-TME_LOGO: 0 
-       1041-TME_VIS: 0 
-       1046-HTE: 0 
-       1047-AUP: 0 
-       1047-PPA: 0 
-       1047-PPQPIS: 0 
-       1059-prestatgeria: 3 
-       1062-petites_histories: 0 
-       1063-Linkat: 3 
-       1063-linkat_new: 3 
-       1067-RECE: 0 
-       1068-dossier: 4 
-       1068-xtecblocs: 7 
-       1073-epergam: 0 
-       1078-GConcert: 0 
-       1078-GConcertTaules: 0 
-       1086-CORREU_CLIENTWS: 0 
-       1086-POE: 0 
-       1089-e13_cfp: 0 
-       1089-e13_cfp_dogc: 0 
-       1089-e13_cfp_icqp: 0 
-       1096-AWA-CLIENTWS: 0 
-       1096-FDC: 0 
-       1096-fdc_apex: 0 
-       1099-AWA: 0 
-       1099-awa-consultaapp: 0 
-       1099-AWA-CONSULTAAPP: 0 
-       1099-AWA-WS: 0 
-       1099-gavis: 0 
-       1099-GUAC: 0 
-       1099-GUX: 0 
-       1099-idi: 0 
-       1099-mau: 0 
-       1099-RUT: 0 
-       1100-ARC: 0 
-       1102-A4S: 0 
-       1102-A4S-WS: 0 
-       1102-A6P: 0 
-       1102-A6P-WS: 0 
-       1102-AGD: 0 
-       1102-AVA_HST: 0 
-       1102-ave: 0 
-       1102-avi: 0 
-       1104-CCP: 0 
-       1104-CWS: 0 
-       1104-OSBUTILS: 0 
-       1104-qcg: 0 
-       1104-utils: 0 
-       1106-QCEN: 0 
-       1111-BORPAS: 0 
-       1111-BORPAS-bs001: 1 
-       1111-BORPAS-bs002: 1 
-       1113-CARNETDOCENT: 0 
-       1114-OBR: 0 
-       1127-CSF: 0 
-       1134-marsupial: 0 
-       1135-OFE_EDU: 0 
-       1139-PUNTEDU_AVAL: 0 
-       1139-PUNTEDU_QUESTIONARI: 0 
-       1139-PUNTEDU_SOL: 0 
-       1148-secretaria: 8 
-       1151-AAC_PREINS: 0 
-       1151-AAC_PREINS_ADM: 0 
-       1151-GSA_AAC: 0 
-       1151-GSA_AUC: 0 
-       1151-GSA_OUC: 0 
-       1151-GSA_RHA: 0 
-       1153-GEL: 0 
-       1154-OVT_PUBLI: 0 
-       1154-OVT_PUBLI_ADM: 0 
-       1160-AAE: 0 
-       1160-AAE-ng: 1 
-       1160-ATRI-backend: 4 
-       1160-atri-common: 0 
-       1160-ATRI-frontend: 0 
-       1160-cer: 0 
-       1160-CER: 0 
-       1160-cer-ng: 1 
-       1160-CER-ng: 0 
-       1160-cld: 0 
-       1160-CLD: 0 
-       1160-cld-ng: 1 
-       1160-CLD-ng: 0 
-       1160-generic-canigo3-rs-utils: 0 
-       1160-generic-canigo3-utils: 0 
-       1160-lps: 0 
-       1160-lps-ng: 1 
-       1160-ra-ng: 0 
-       1160-selec: 0 
-       1160-selec-ng: 1 
-       1160-sirhTokenHandler: 0 
-       1164-fp_bdc: 0 
-       1168-web-de-lespai-danalisi: 0 
-       1169-quadre-de-comandament-operatiu: 0 
-       1183-fp_portal: 4 
-       1191-cron_pressupost: 0 
-       1191-fp_pressupost: 0 
-       1200-gexam: 0 
-       1207-GPL: 0 
-       1231-cron_expedients: 0 
-       1231-cron_muface: 0 
-       1231-fp_expedients: 10 
-       1231-fp_nomenaments: 2 
-       1231-fp_plapensions: 0 
-       1231-fp_sipweb: 0 
-       1231-fp_wsence: 0 
-       1231-fp_wsfp: 0 
-       1231-fp_wsgf: 0 
-       1231-rrhh-connexiohostutil: 0 
-       1231-rrhh-jdbc: 0 
-       1247-informes-independents: 0 
-       1251-BTL: 0 
-       1252-gov_publicacions: 0 
-       1276-etc-lib-patient-chart-core: 0 
-       1276-etpat-backend-common: 0 
-       1363-AJG: 7 
-       1363-CJG: 0 
-       1364-AJR: 0 
-       1366-BLJ: 0 
-       1367-CCP: 0 
-       1370-AGU: 0 
-       1370-EDI: 0 
-       1370-EST: 0 
-       1370-EXX: 4 
-       1370-GDO: 3 
-       1370-IJU: 0 
-       1370-MIG: 0 
-       1370-MRQ: 0 
-       1370-mst_cl_serveiscachejats: 0 
-       1370-ORG: 1 
-       1370-RMA: 0 
-       1370-TRA: 2 
-       1370-TRA-API: 0 
-       1370-TRACOM: 0 
-       1370-trp00-gen-lib_cl_fe: 0 
-       1370-trp00-gen-lib_cl_fe-bs002: 0 
-       1370-trp00-gen-lib_cl_fe-bs003: 0 
-       1370-uni_cl_serveiscachejats: 0 
-       1370-usr_cl_bbdd: 0 
-       1370-VEX: 0 
-       1371-BIJUS: 0 
-       1371-COR: 3 
-       1371-COT: 2 
-       1371-GDE: 0 
-       1371-GIT: 0 
-       1371-GPP: 0 
-       1371-gppx-bs003: 0 
-       1371-gppx-bs004: 0 
-       1371-GUS: 0 
-       1371-IAP-bs003: 0 
-       1371-IAP-bs005: 0 
-       1371-IMLCFC: 0 
-       1371-NUM: 0 
-       1371-PAR: 0 
-       1371-POR: 0 
-       1371-RIR: 6 
-       1371-SIG: 0 
-       1371-T2D: 0 
-       1371-TME: 0 
-       1371-TTA-ATEC-bs003: 0 
-       1371-TTA-ATEC-bs004: 0 
-       1373-FJG: 0 
-       1374-FPJ: 0 
-       1377-GPO: 0 
-       1383-RFIDGD-J2EE: 0 
-       1396-SJP: 0 
-       1398-TMS: 0 
-       1435-asj: 0 
-       1478-1478_EsportFederat_back-end: 0 
-       1478-1478_EsportFederat_front-end: 0 
-       1504-gabjur-connectors: 0 
-       1504-gabjur-documentum-business-core: 0 
-       1504-gabjur-documentum-web-core: 0 
-       1504-gabjur-j2ee-business-core: 0 
-       1504-gabjur-j2ee-scan-business: 0 
-       1504-gabjur-j2ee-services-root: 0 
-       1504-gabjur-j2ee-web-core: 1 
-       1504-gabjur-services-core: 1 
-       1504-gabjur-tsystems-tree: 0 
-       1504-gabjur-war-ad: 2 
-       1504-gabjur-war-ax: 2 
-       1504-gabjur-war-cn: 2 
-       1504-gabjur-war-cs: 2 
-       1504-gabjur-war-ct: 2 
-       1504-gabjur-war-fd: 2 
-       1504-gabjur-war-gn: 2 
-       1504-gabjur-war-rd: 2 
-       1504-gabjur-war-rh: 2 
-       1511-gpx: 1 
-       1514-gtc: 4 
-       1514-gtc-bs001: 4 
-       1514-gtc-bs002: 4 
-       1561-backend_java: 0 
-       1561-frontend-angular: 0 
-       1668-core-admin: 0 
-       1668-core-agenda: 0 
-       1668-core-assemblies: 0 
-       1668-core-auxiliares: 0 
-       1668-core-busquedaparametrizada: 0 
-       1668-core-candidato: 0 
-       1668-core-clientedatos: 0 
-       1668-core-comunicaciones: 0 
-       1668-core-configuracionbusquedas: 0 
-       1668-core-contrato: 0 
-       1668-core-controlacceso: 0 
-       1668-core-dbkona: 0 
-       1668-core-delegado: 0 
-       1668-core-demanda: 0 
-       1668-core-entidadescomunes: 0 
-       1668-core-estadisticas: 0 
-       1668-core-gestorcomunicados: 0 
-       1668-core-infointer: 0 
-       1668-core-informes: 0 
-       1668-core-inicio: 0 
-       1668-core-modulos: 0 
-       1668-core-oferente: 0 
-       1668-core-oferta: 0 
-       1668-core-personafisica: 0 
-       1668-core-pica: 0 
-       1668-core-procesosautomaticos: 0 
-       1668-core-rest: 0 
-       1668-core-serviciosexternos: 0 
-       1668-core-sithinlet: 0 
-       1668-core-solicitudbusqueda: 0 
-       1668-core-webservices: 0 
-       1669-1669-bdi_web: 0 
-       1669-bdi_web: 2 
-       1669-bdi_web_database: 0 
-       1672-GPB: 4 
-       1673-JERJES: 4 
-       1675-dagda: 0 
-       1675-feina-activa-java-core: 0 
-       1677-consultawebservicegdi: 0 
-       1677-CTR: 0 
-       1682-accesnet: 0 
-       1682-accesnet-core: 1 
-       1682-accesnet-ws-pica: 0 
-       1682-acces-universitat-backend: 1 
-       1682-acces-universitat-frontend: 0 
-       1682-pau-negoci: 0 
-       1682-preinscripcio-negoci: 0 
-       1682-spring-deps: 0 
-       1682-wicket-deps: 0 
-       1691-ireneu: 1 
-       1693-guau: 0 
-       1696-pge: 0 
-       1700-core: 0 
-       1700-core-hibernate: 0 
-       1700-core-tinymceplugins: 0 
-       1700-core-web: 0 
-       1700-core-wicket: 0 
-       1700-qpq: 0 
-       1701-rap: 0 
-       1705-centres: 0 
-       1706-repre: 0 
-       1726-BIBDIG: 1 
-       1733-CTU: 1 
-       1745-edipol: 0 
-       1745-webmap_sicint: 0 
-       1747-GAF: 0 
-       1751-mucedi: 0 
-       1759-sicc: 0 
-       1760-INSGRI: 1 
-       1765-MAP: 2 
-       1765-sgpext-client: 0 
-       1768-BARRIS: 0 
-       1781-ovc-xmlbeans: 0 
-       1781-REGIBI: 0 
-       1782-RISCOS: 1 
-       1783-rpuc_backoffice: 0 
-       1783-RPUC_backoffice: 0 
-       1783-rpuc_consulta: 0 
-       1783-rpuc_model: 0 
-       1783-rpuc_portal: 0 
-       1794-SQA: 0 
-       1805-COSTRM: 2 
-       1807-TER: 0 
-       1808-TEU: 11 
-       1808-teu-ciaa: 3 
-       1808-teu-pcaa: 3 
-       1808-TEU-PDOC: 3 
-       1816-scriptsbbdd: 0 
-       1817-SANFER: 0 
-       1825-MUC: 4 
-       1841-CPT_WEB: 0 
-       1848-LLW: 1 
-       1851-SEF: 3 
-       1889-1889-cloud-hes-cercador-bbdd: 0 
-       1889-1889-cloud-hes-integradorimatges-bbdd: 0 
-       1889-1889-cloud-hes-ra-ng: 0 
-       1889-1889-cloud-hes-spring-boot-core-lib: 0 
-       1889-1889-cloud-hes-visor-bbdd: 0 
-       1889-1889-cloud-integradorimatges-commons-lib: 0 
-       1917-ice-entrada-de-dades: 0 
-       2014-PROGRAMACAT: 2 
-       2017-ItinerarisApren: 0 
-       2020-web-service: 0 
-       2039-cepd: 0 
-       2039-pcedcg: 0 
-       2041-manteniment-codis: 0 
-       2041-manteniment-ui: 0 
-       2050-cds: 0 
-       2057-sigrag: 0 
-       2074-PDCENTRE: 0 
-       2075-ORATORIA: 0 
-       2076-MSG: 0 
-       2076-SML: 0 
-       2076-SSCC-EnviaCorreu: 0 
-       2081-CORALS: 0 
-       2083-CAMPS: 0 
-       2087-ASAELE: 0 
-       2088-ACO: 0 
-       2089-aplisstt: 0 
-       2089-reva: 0 
-       2090-ateneu: 8 
-       2097-sistema-indicadors-ocupacio-publica: 0 
-       2098-informes-estadistics-mensuals: 0 
-       2138-REE: 0 
-       2138-REE_WS: 0 
-       2148-premsa: 0 
-       2210-SIGC: 1 
-       2239-EDOCS: 0 
-       2506-canal_empresa_common: 5 
-       2506-canal_empresa_eina: 0 
-       2506-canal_empresa_portal: 0 
-       2506-canal_empresa_serveis: 0 
-       2506-ce-backend: 4 
-       2506-ce-bbdd: 0 
-       2506-ce-portal-frontend: 0 
-       2506-gsit3-ce-lib-commons: 5 
-       2506-tramits-gestions: 0 
-       2506-visio-expedient-lib: 0 
-       2507-Ressenyes: 0 
-       2510-namante: 0 
-       2510-namaste: 0 
-       2514-icaen: 1 
-       2516-GTR: 30 
-       2516-historic_sir: 0 
-       2522-sigtur: 4 
-       2523-GeoBI: 0 
-       2526-gipe: 1 
-       2527-SCOP: 0 
-       2528-GFSE: 0 
-       2535-sigcorp-backend: 30 
-       2535-sigcorp-frontend: 0 
-       2535-sigcorp-viewer: 0 
-       2541-SEFAC: 1 
-       2541-SEFAC_TEST: 0 
-       2545-fp_wsmarcatges: 0 
-       2551-Mapa-de-mesures: 0 
-       2551-Mapa-de-mesures-bs001: 0 
-       2551-Mapa-de-mesures-bs002: 0 
-       2559-canigo.integration.antivirus.indra: 0 
-       2559-connectorJsonPSGD: 0 
-       2559-gicar-service: 0 
-       2559-gidecat-connector: 0 
-       2559-gro-lite-types: 0 
-       2559-pica-avisECorreu-types: 0 
-       2559-pica-common-types: 0 
-       2559-pica-connector-service: 0 
-       2559-pica-eCopia-types: 0 
-       2559-pica-ged-types: 0 
-       2559-pica-generic-types: 0 
-       2559-pica-grd-types: 0 
-       2559-pica-gro-types: 0 
-       2559-pica-nt-types: 0 
-       2559-pica-psis-types: 0 
-       2559-psd-service: 0 
-       2559-tdps-connector-service: 0 
-       2559-tei-ibt-types: 0 
-       2559-TGAuditoria: 0 
-       2559-TGModel: 0 
-       2559-TGServeis: 0 
-       2559-tgserveis-connector: 0 
-       2559-TramitadorGeneric: 0 
-       2559-TramitadorGenericWeb: 1 
-       2560-CCP: 0 
-       2567-TIPGRI: 0 
-       2577-jenkins-sonar-scanner-configuration: 0 
-       2577-jenkins-sonar-scanner-configuration-library: 0 
-       2578-QEA: 22 
-       2579-CPPAC: 0 
-       2579-CPPAC-bs001: 0 
-       2579-CPPAC-bs002: 0 
-       2580-EAPPAC: 3 
-       2580-NPAC: 8 
-       2580-npac-perws-axis2-client: 0 
-       2580-VPPAC: 3 
-       2581-EMC: 0 
-       2597-REGMAQ: 26 
-       2601-TAXX-bs003: 0 
-       2601-TAXX-bs004: 0 
-       2612-Aula_Virtual: 10 
-       2612-aula_virtual_pre: 19 
-       2632-2632-Web-Service-SPE: 0 
-       2647-SIFECAT1420: 99 
-       2657-tais: 5 
-       2657-transferencies: 0 
-       2658-canigo.integration.sarcat.pica: 1 
-       2658-SCDIAP: 0 
-       2658-SCDIAP-ADMIN: 0 
-       2658-SCDIAP-CORE: 0 
-       2662-tccsp-pica-common-types: 0 
-       2662-tccsp-pica-connector-service: 0 
-       2662-tccsp-pica-ecopia-types: 0 
-       2662-tccsp-pica-ged-types: 0 
-       2662-tccsp-pica-generic-types: 0 
-       2662-tccsp-pica-grd-types: 0 
-       2662-tccsp-pica-gro-types: 0 
-       2662-tccsp-pica-ibt-types: 0 
-       2662-tccsp-pica-psisi-types: 0 
-       2662-tccsp-pica-psis-types: 0 
-       2662-tccsp-pica-sarcat-types: 0 
-       2662-trec-comu: 0 
-       2680-arq-can1.4-ejbutils: 0 
-       2680-arq-can1.4-ejcat-utils: 0 
-       2680-arq-can1.4-juslog-web: 0 
-       2680-arq-can1.4-justicia-commons: 2 
-       2680-arq-can1.4-justicia-common-security: 0 
-       2680-arq-can1.4-justicia-common-security-nosso: 0 
-       2680-arq-can1.4-jusweb: 0 
-       2680-arq-can1.4-otj-dwr2-upgrade: 0 
-       2680-arq-can1.4-valuelistutils: 0 
-       2680-arq-can1.4-vlhext: 0 
-       2680-arq-can3.1-hibernate: 0 
-       2680-arq-can3.1-justicia-canigo-common: 0 
-       2680-arq-can3.1-justicia-canigo-test: 0 
-       2680-arq-can3.1-simple-jndi: 0 
-       2680-arq-can3.2_ang-justicia-ng: 0 
-       2680-arq-can3.2_bkend-justicia-canigo3-rs-utils: 0 
-       2680-arq-can3.2_bkend-justicia-canigo3-utils: 0 
-       2680-arq-can3.4_ang-justicia-ng: 0 
-       2680-arq-can3.4_ang-justicia-ng_11: 0 
-       2680-arq-can3.4_ang-ra-ng: 0 
-       2680-arq-can3.4_ang-ra-ng_11: 0 
-       2680-arq-can3.4_ang-ra-ng_9: 0 
-       2680-arq-can3.4-jus-canigo3.4-audit-cloud-lib: 0 
-       2680-arq-can3.4-jus-canigo3.4-cache-cloud-lib: 0 
-       2680-arq-can3.4-jus-canigo3.4-cloud-lib: 9 
-       2680-arq-can3.4-jus-canigo3.4-ejcatplus-cloud-lib: 0 
-       2680-arq-can3.4-jus-canigo3.4-spring-data-mongodb: 0 
-       2680-arq-can3.4-jus-canigo3.4-transversal-cloud-lib: 0 
-       2680-arq-can3.4-jus-canigo3.6-cache-cloud-lib: 0 
-       2680-arq-can3.6_ang-justicia-ng_13: 0 
-       2680-arq-can3.6_ang-ra-ng_13: 0 
-       2680-arq-can3.6-hibernate-core: 0 
-       2680-arq-can3.6-jus-canigo3.4-ejcatplus-cloud-lib: 0 
-       2680-arq-can3.6-jus-canigo3.6-cache-cloud-lib: 0 
-       2680-arq-can3.6-jus-canigo3.6-cloud-lib: 9 
-       2680-arq-filetransferutils: 1 
-       2680-arq-osbmail: 0 
-       2680-arq-redabo-utils: 0 
-       2680-arq-traductor-utils: 0 
-       2680-arq-wssclient: 0 
-       2680-CEE: 0 
-       2680-f004-arq-ejcatlib: 0 
-       2680-GEF: 0 
-       2680-gen: 0 
-       2680-GRP: 1 
-       2680-ra-ng: 0 
-       2680-RGU: 0 
-       2680-SFC: 5 
-       2680-sso: 5 
-       2680-STD: 0 
-       2680-std-osb-utils: 0 
-       2680-TDJ: 3 
-       2700-auth: 0 
-       2700-is3-components-frontend: 0 
-       2700-is3-core-frontend: 4 
-       2700-MonitorFuncional: 1 
-       2700-MonitorOperatiu: 2 
-       2700-MonitorTest: 0 
-       2700-tap-backend: 0 
-       2700-tap-frontend: 0 
-       2700-tem-backend: 0 
-       2700-tem-frontend: 0 
-       2700-TFD-ConsolaCreacio: 2 
-       2700-TFD-ConsolaPublicacio: 1 
-       2700-tfd-formules: 0 
-       2700-TFD-Renderitzacio: 0 
-       2700-TFD-ServeiFormularis-bs001: 0 
-       2700-TFD-ServeiFormularis-bs003: 0 
-       2700-tmr-backend: 0 
-       2700-tmr-frontend: 0 
-       2700-tsp-frontend: 0 
-       2700-ValidadorSAML: 1 
-       2700-ValidadorWIFI: 0 
-       2703-GEDAC: 0 
-       2704-RALC: 0 
-       2715-rpcac-backend: 0 
-       2784-ctc-db: 0 
-       2788-PDR: 4 
-       2803-PATT: 2 
-       2806-pci_angular: 1 
-       2905-axis2-kernel-1.3-indra-patch: 3 
-       2905-gsit-xmlbeans: 0 
-       2905-WSMSAN: 1 
-       2906-PEBAC: 0 
-       2906-PEBAX: 0 
-       2924-bigdata_pro: 0 
-       2933-cultura-sigcorp-viewer: 2 
-       2936-gs-java: 0 
-       2936-gs-noma-java: 0 
-       2938-visor_pdr: 0 
-       2942-atc-sigcorp-viewer: 1 
-       2945-sostic-bs001: 2 
-       2945-sostic-bs002: 3 
-       2950-recogidasaxis: 0 
-       2950-transportesaxis: 0 
-       2950-VCPE: 2 
-       2950-VCPE-bs001: 0 
-       2950-VCPE-bs002: 0 
-       2950-VCPE-bs003: 0 
-       2950-VCPE-bs004: 3 
-       2950-ventasaxis: 0 
-       2951-comun: 3 
-       2951-omg: 4 
-       2951-regpae_back: 2 
-       2951-regpae_front: 0 
-       2951-ropcat: 3 
-       2952-COPE: 1 
-       2962-catjoc-bus-client: 0 
-       2962-catjoc-commons: 0 
-       2962-catjoc-integracions: 0 
-       2965-GESPRO: 0 
-       2978-EED: 0 
-       2978-OTG: 0 
-       2982-Electia: 2 
-       2990-planificador: 0 
-       2993-GRAM-common: 0 
-       2994-SJC: 8 
-       2996-convocatories-bbdd: 0 
-       2998-AVEP: 1 
-       2998-ep-canigo3-rs-utils: 0 
-       2998-ep-canigo3-utils: 0 
-       2998-epextr: 0 
-       2998-EPEXX-bs005: 0 
-       2998-EPEXX-bs007: 4 
-       2998-epgus-aplicacions: 0 
-       2998-epgus-unitats: 0 
-       2998-epgus-usuaris: 0 
-       2998-EPPLA-bs005: 0 
-       2998-EPPLA-bs007: 0 
-       2998-EPSIG: 0 
-       2998-epsso: 2 
-       2998-EPSTQ: 0 
-       2998-EPSTQ-bs005: 0 
-       2998-EPSTQ-bs007: 0 
-       2998-eptme-configuracio: 0 
-       2998-eptme-dades: 0 
-       2998-eptokenhandler: 0 
-       2998-EPTRA: 0 
-       2998-gepip-back: 0 
-       2998-jus-audit: 0 
-       3003-SGBP-bs003: 0 
-       3003-SGBP-bs004: 0 
-       3003-SGBP-bs005: 0 
-       3021-portal-ciutada-back: 0 
-       3022-cron-dates: 0 
-       3022-esocial-jpa-repositories: 0 
-       3022-esocial-services: 0 
-       3022-portal-empleat-public-back: 0 
-       3022-Scripts-DCR: 0 
-       3022-tsocial-brms-estudi-grup1: 0 
-       3022-tsocial-brms-estudi-grup2: 0 
-       3022-tsocial-brms-estudi-grup3: 0 
-       3022-tsocial-brms-estudi-zip: 0 
-       3023-portal-agencies-colaboradores-back: 0 
-       3024-eSocial-Architecture-Interop: 0 
-       3024-esocial-brms-client: 0 
-       3024-esocial-brms-helloworld: 0 
-       3024-esocial-brms-helloworld-hw001: 0 
-       3024-esocial-brms-helloworld-hw002: 0 
-       3024-esocial-brms-helloworld-hw003: 0 
-       3024-eSocial-Core-Front: 0 
-       3024-esocial-corticon-client: 0 
-       3024-esocialInterfaces: 0 
-       3024-esocial-interop-core: 0 
-       3024-esocial-notifications-manager: 0 
-       3024-esocial-notifications-manager-bl: 0 
-       3024-esocial-notifications-manager-parent: 0 
-       3024-esocialPicaArchitecture: 0 
-       3024-esocial-portal-administracio-front: 0 
-       3024-esocial-regles-corticon: 0 
-       3039-padoct_batch_archive: 0 
-       3039-padoct_batch_completarmetadatos: 0 
-       3039-padoct_batch_consolidacion: 0 
-       3039-padoct_batch_decode_base64: 0 
-       3039-padoct_batch_deprecado: 0 
-       3039-padoct_batch_odtpdf: 0 
-       3039-padoct_batch_version: 0 
-       3039-padoct_files_multimedia: 0 
-       3039-padoct_opentext_client: 0 
-       3039-padoct_opentext_robot: 0 
-       3039-padoct_pro: 0 
-       3039-padoct_rest_largefile: 0 
-       3039-padoct_rpa_csv: 0 
-       3039-pdsit_migration_escrituras: 0 
-       3049-ArxiuMemoriaHistorica-bs003: 0 
-       3049-ArxiuMemoriaHistorica-bs004: 0 
-       3049-ArxiuMemoriaHistorica-bs005: 0 
-       3049-ArxiuMemoriaHistorica-bs006: 0 
-       3058-fiances-mongo-scripts: 0 
-       3058-fiances-postgresql-scripts: 0 
-       3058-slisync-postgresql-scripts: 0 
-       3058-users-postgresql-scripts: 0 
-       3070-GEAC_Corp: 0 
-       3070-geac_corp_wintask: 0 
-       3072-CEJFE-APRENGES: 1 
-       3072-CEJFE-APRENGES-INSCRIPCIONS: 2 
-       3072-CEJFE-BBDD: 0 
-       3072-CEJFE-FRONTEND: 0 
-       3072-CEJFE-FRONTEND-INSCRIPCIONS: 0 
-       3083-fc-bbdd: 0 
-       3083-fc-front: 0 
-       3083-fc-front-common: 0 
-       3083-fc-notifications: 0 
-       3083-fc-shared: 0 
-       3098-soc-auth: 0 
-       3098-soc-batchs: 0 
-       3098-soc-colaboracio: 0 
-       3098-soc-commons: 0 
-       3098-soc-dadesmestres: 0 
-       3098-soc-documentacio: 0 
-       3098-soc-expedients: 0 
-       3098-soc-front: 0 
-       3098-soc-informes: 0 
-       3098-soc-instruments: 0 
-       3098-soc-plantilles: 0 
-       3098-soc-seguretat: 0 
-       3098-soc-xml-beans: 0 
-       3163-rgc-web-angular: 0 
-       3163-rgc-web-backend: 0 
-       3163-rgc-web-e_formularis: 0 
-       3163-rgc-web-ws: 0 
-       3170-RECVTCPARENT: 0 
-       3172-EEP-backend: 25 
-       3172-EEP-frontend: 1 
-       3172-GDOC: 4 
-       3172-GSIG: 0 
-       3172-pesig: 0 
-       3172-SIAE: 24 
-       3172-sirh-utils: 0 
-       3173-ROPER: 0 
-       3173-ROPER_UI: 0 
-       3174-ecofin-corticon: 0 
-       3174-geec-docx-stamper: 0 
-       3185-QuaireApp: 1 
-       3192-TAISARS: 0 
-       3201-Incasol.AgilePoint: 0 
-       3201-Incasol.ALI: 0 
-       3201-Incasol.AMA: 0 
-       3201-Incasol.CNVNET: 0 
-       3201-Incasol.Gateway: 0 
-       3201-Incasol.GestorDocumental: 0 
-       3201-Incasol.Identity: 0 
-       3201-Incasol.IncExtNet: 0 
-       3201-Incasol.Infrastructure.Services: 0 
-       3201-Incasol.IP: 0 
-       3201-Incasol.IP.ConsumerService: 0 
-       3201-Incasol.IP.DocumentsReport: 0 
-       3201-Incasol.IP.SchedulerService: 0 
-       3201-Incasol.IP.Web: 0 
-       3201-Incasol.Mails: 0 
-       3201-Incasol.Mestres: 0 
-       3201-Incasol.NPA: 0 
-       3201-Incasol.OBI: 0 
-       3201-Incasol.Sap: 0 
-       3201-Incasol.SyncronizationSap.ConsumerService: 0 
-       3201-Incasol.Tercers: 0 
-       3201-Incasol.Tercers.ConsumerService: 0 
-       3201-Incasol.Tercers.Web: 0 
-       3204-EGP: 21 
-       3204-EGPFRONT: 0 
-       3205-censcom_xmlbuilder: 0 
-       3215-roc-backend: 1 
-       3215-roc-frontend: 0 
-       3216-professorat: 1 
-       3217-DUNWEB: 0 
-       3217-DUNWEB-bsDun001: 1 
-       3217-DUNWEB-bsDun002: 1 
-       3218-FEMP: 21 
-       3218-FEMP-bs001: 21 
-       3218-FEMP-bs002: 0 
-       3218-FEMP-bs003: 21 
-       3218-FEMP-bs004: 21 
-       3218-FEMP-bs005: 0 
-       3218-FEMP-bs006: 0 
-       3218-FEMP-bs007: 21 
-       3222-OBSPREU: 1 
-       3225-centres: 0 
-       3227-dsocial_consulta: 0 
-       3227-dsocial_consulta_ui: 0 
-       3227-dsocial_gestoralertes: 4 
-       3227-dsocial_gestoralertes_ui: 0 
-       3227-dsocial_imv: 0 
-       3227-dsocial_imv_ui: 0 
-       3227-dsocial_llibreries: 0 
-       3227-DSOCIAL-Llistats: 0 
-       3227-dsocial_pica: 0 
-       3227-dsocial_pub2mdm: 0 
-       3227-dsocial_sentinella: 4 
-       3227-dsocial_sentinella_ui: 0 
-       3227-DSOCIAL_SERVEIS: 0 
-       3227-dsocial_serveis_addressdoctor: 0 
-       3227-dsocial_serveis_ei: 0 
-       3227-dsocial_serveis_mdm: 0 
-       3227-DSOCIALS_UI: 0 
-       3227-espaidoc-api: 1 
-       3227-espaidoc-backoffice: 0 
-       3227-espaidoc-common: 0 
-       3227-espaidoc-scheduler: 0 
-       3227-espaidoc-security: 0 
-       3227-tsu: 0 
-       3247-ecentre: 0 
-       3256-GESTILS: 0 
-       3272-tf-bootstrap-spa-theme: 0 
-       3272-tf-canigo-integracio-pica-fix-lib: 0 
-       3272-tf-commons-document-lib: 0 
-       3272-tf-commons-lib: 0 
-       3272-tf-commons-spa-lib: 0 
-       3272-tf-gidecat-client-lib: 0 
-       3272-tf-gs-client-lib: 0 
-       3272-tf-pica-client-lib: 2 
-       3272-tf-psd-client-lib: 0 
-       3272-tf-valid-client-lib: 0 
-       3272-ui-component-spa-lib: 0 
-       3283-audiovisuals: 0 
-       3283-gicar: 0 
-       3286-bustia-etica-denuncies: 0 
-       3288-GdNABackend: 7 
-       3288-GdNAScripts: 0 
-       3288-GdNAWeb: 0 
-       3294-fsecat: 2 
-       3294-fsecat_ui: 0 
-       3295-bisoc: 0 
-       3449-backend: 0 
-       3449-frontal: 0 
-       3556-aprenges-bbdd-drets-socials: 0 
-       3556-aprenges-drets-socials: 1 
-       3556-aprenges-drets-socials-inscripcions: 2 
-       3556-aprenges-frontend-drets-socials: 0 
-       3556-aprenges-frontend-inscripcions-drets-socials: 0 
-       cpd1-jenkins-shared-library: 0 
-       cpd2-jenkins-shared-library: 0 
-       cpd3-mc-jenkins-shared-library: 0 
-       cpd3-nex-jenkins-shared-library: 0 
-       cpd4-jenkins-shared-library: 0 
-       null-null: 0 
-       cat.gencat.ctti.sic:RemedyWSClient: 0 
-       0006-PRC: 0        0007-PRF: 3        0012-dar_punic: 0        0012-PbaseALE: 0        0012-pbasecd: 0        0012-PbaseDR: 0        0012-PbaseGC: 0        0012-PbaseGD: 0        0012-PbasePEQ: 0        0012-PbaseRN: 0        0012-pbaseud: 0        0012-PbaseWS: 0        0012-Punic: 0        0012-PunicDP: 0        0012-PunicPG: 0        0012-PunicPUA: 0        0014-RARE: 0        0018-ROCAMP: 0        0019-ROESP: 0        0020-ROMA: 8        0021-ervc-jasperfontslib: 0        0021-ervc-rampartlib: 0        0021-eRVC-utils: 0        0028-SGI: 2        0030-rvcsol: 2        0030-rvcws: 0        0040-XCAC: 39        0043-ANICOM: 3        0043-anicomPublic: 3        0046-ARECRE: 1        0047-ARF: 0        0049-ADVI: 2        0051-ASI: 0        0068-CMN: 1        0069-CMV: 3        0072-COM: 0        0073-CON: 17        0075-CPE: 0        0080-DEA: 6        0085-DUW: 0        0087-ECA: 6        0088-ECNP: 0        0088-ecnp-back: 2        0088-ecnppublic: 0        0088-ecnppublic-bs002: 0        0088-ecnppublic-bs003: 0        0089-EGT: 0        0093-AFS: 9        0097-FRUIT: 3        0102-GEAI: 16        0103-GEN: 1        0106-GIA: 11        0107-GIDARP: 0        0108-GIN-bs001: 15        0108-GIN-bs003: 0        0108-GIN-bs004: 0        0116-IIA: 3        0117-INDEXA: 1        0121-LLM: 0        0127-NZO: 1        0128-OLI: 0        0131-OPNET: 0        0132-PARCS: 1        0134-PER: 0        0136-PERFOC: 1        0137-GFE: 1        0140-GDN-GPS: 0        0158-SIG_CAR: 0        0176-Catalunya.com-angular: 0        0187-canigo.core: 0        0187-canigo.integration.antivirus: 0        0187-canigo.integration.avisosalertes.pica: 0        0187-canigo.integration.dni.pica: 0        0187-canigo.integration.icc: 0        0187-canigo.integration.icc.datatypes: 0        0187-canigo.integration.notificacions.electroniques: 0        0187-canigo.integration.padro.pica: 0        0187-canigo.integration.pica: 0        0187-canigo.integration.pica.avisosalertes.support: 0        0187-canigo.integration.pica.padro.support: 0        0187-canigo.integration.pica.tributs.support: 0        0187-canigo.integration.psgd: 0        0187-canigo.integration.psis: 0        0187-canigo.integration.sarcat: 0        0187-canigo.integration.sarcat.pica: 0        0187-canigo.integration.sarcat.planificat: 0        0187-canigo.integration.sarcat.suport: 0        0187-canigo.integration.sgde: 0        0187-canigo.integration.sgde.support: 0        0187-canigo.integration.ssc: 0        0187-canigo.integration.tributs.pica: 0        0187-canigo.operation.instrumentation: 0        0187-canigo.operation.logging: 0        0187-canigo.persistence.core: 0        0187-canigo.persistence.jpa: 0        0187-canigo.persistence.mongodb: 0        0187-canigo.root: 0        0187-canigo.root-jdk11: 0        0187-canigo.security: 0        0187-canigo.security.saml: 0        0187-canigo.security.saml.bridge: 0        0187-canigo.security.saml.rest: 0        0187-canigo.support.fileupload: 0        0187-canigo.support.lopd: 0        0187-canigo.support.mailing: 0        0187-canigo.support.merging: 0        0187-canigo.support.ole: 0        0187-canigo.support.resizeimg: 0        0187-canigo.support.sftp: 0        0187-canigo.test: 0        0187-canigo.test-jdk11: 0        0187-canigo.web.core: 0        0187-canigo.web.rs: 0        0189-STD2-Conversio-core: 0        0189-STD2-core: 0        0192-0012-PbaseALE: 0        0192-0019-roesp: 3        0192-0019-ROESP: 0        0192-0030-rvcws: 0        0192-0176-catalunya.com-angular: 0        0192-0205-portalsts_atc: 0        0192-0206-tributs: 0        0192-0227-jovcens: 2        0192-0227-jovcensweb: 0        0192-0280-jovgeij: 3        0192-0280-jovgeijweb: 2        0192-0292-logintoaplclient: 0        0192-0294-jovnotis: 3        0192-0294-jovnotisweb: 3        0192-0323-dcam: 3        0192-0323-scvv: 0        0192-0342-JOV_TITUS: 2        0192-0434-cerca-oficines-lib: 0        0192-0434-cita-previa-app: 0        0192-0434-cita-previa-lib: 0        0192-0434-gsitassemblies: 0        0192-0434-gsitfa: 0        0192-0435-gestor-contactes-lib: 0        0192-0435-sarcat-lib: 0        0192-0435-seu-client: 0        0192-0435-ta-backend: 5        0192-0435-ta-batch: 3        0192-0435-ta-frontend: 0        0192-0435-ta-scheme: 0        0192-0435-tramitacio-lib: 0        0192-0441-wallet-bbdd: 0        0192-0559-consolidacio_fons_museus: 1        0192-0559-consol_pub: 0        0192-0559-consol_pub_front: 0        0192-0559-consol_pub_front-bs002: 0        0192-0559-consol_pub_front-bs003: 0        0192-0559-job_peces: 0        0192-0559-jobs_con: 0        0192-0559-jobs_ingesta: 0        0192-0559-jobs_publicacio: 0        0192-0559-webservice_jobs: 0        0192-0829-gefact-alfresco-alertesui: 0        0192-0829-gefact-alfresco-backoffice: 36        0192-0829-gefact-alfresco-core: 0        0192-0829-gefact-alfresco-facturae: 2        0192-0829-gefact-alfresco-rest: 1        0192-0829-gefact-alfresco-webconsulta: 0        0192-0829-gefact-alfresco-webservice: 0        0192-0848-ControlProcessosPO: 0        0192-0913-gestor-documental-service: 4        0192-0988-lib-ogebase-wl12: 0        0192-0988-lib-ogecataleg-wl12: 1        0192-0988-lib-teimonitoritzacio-wl12: 0        0192-0988-lib-teischemas-wl12: 0        0192-0988-lib-teiwordservice-wl12: 1        0192-0988-mti-brms-model: 0        0192-0988-mti-brms-service: 0        0192-0988-ogeadmin-wl12: 2        0192-0988-tei-brms-service: 0        0192-0988-teiprocessos-wl12: 11        0192-0988-tei-wl12: 11        0192-0988-tei_ws-wl12: 3        0192-0989-mti-wl12: 3        0192-0989-ogebase-wl12: 0        0192-0989-ogecataleg-wl12: 1        0192-1134-marsupial: 0        0192-1160-ATRI-backend: 0        0192-1200-gexam: 0        0192-1216_limits: 0        0192-1276-etc-lib-allergies: 0        0192-1276-etc-lib-case-summary: 0        0192-1276-etc-lib-clinical-course: 0        0192-1276-etc-lib-context-info: 0        0192-1276-etc-lib-core: 0        0192-1276-etc-lib-data-register: 0        0192-1276-etc-lib-diagnostics: 0        0192-1276-etc-lib-document-viewer: 0        0192-1276-etc-lib-feedback: 0        0192-1276-etc-lib-medical-report: 0        0192-1276-etc-lib-medication: 0        0192-1276-etc-lib-medication-planner: 0        0192-1276-etc-lib-patient: 0        0192-1276-etc-lib-patient-chart-core: 0        0192-1276-etc-lib-patient-history: 0        0192-1276-etc-lib-patient-history-core: 0        0192-1276-etc-lib-petitory: 0        0192-1276-etc-lib-precedents: 0        0192-1276-etc-lib-professional: 0        0192-1276-etc-lib-proof-warnings: 0        0192-1276-etc-lib-surgical-interventions: 0        0192-1276_etpat-backend-common_export: 0        0192-1370-gdo: 0        0192-1370-GDO: 3        0192-1370-TRA-API: 0        0192-1370-TRACOM: 0        0192-1478-1478_EsportFederat_front-end: 0        0192-1478_esportfederat_front-end: 0        0192-1561-backend_java: 0        0192-1561-frontend-angular: 0        0192-1668-core-admin: 0        0192-1668-sicas-admin: 0        0192-1668-sicas-agenda: 0        0192-1668-sicas-auxiliares: 0        0192-1668-sicas-bui001: 0        0192-1668-sicas-bui002: 0        0192-1668-sicas-bui003: 0        0192-1668-sicas-bui004: 0        0192-1668-sicas-bui005: 0        0192-1668-sicas-bui006: 0        0192-1668-sicas-bui007: 0        0192-1668-sicas-bui008: 0        0192-1668-sicas-bui009: 0        0192-1668-sicas-bui010: 0        0192-1668-sicas-bui011: 0        0192-1668-sicas-bui012: 0        0192-1668-sicas-bui013: 0        0192-1668-sicas-bui014: 0        0192-1668-sicas-bui015: 0        0192-1668-sicas-bui016: 2        0192-1668-sicas-bui017: 0        0192-1668-sicas-bui018: 0        0192-1668-sicas-bui019: 0        0192-1668-sicas-bui020: 0        0192-1668-sicas-bui021: 0        0192-1668-sicas-bui022: 0        0192-1668-sicas-bui023: 0        0192-1668-sicas-bui024: 0        0192-1668-sicas-bui025: 0        0192-1668-sicas-bui026: 0        0192-1668-sicas-bui027: 0        0192-1668-sicas-bui028: 0        0192-1668-sicas-bui029: 0        0192-1668-sicas-bui030: 0        0192-1668-sicas-busquedaparametrizada: 2        0192-1668-sicas-candidato: 0        0192-1668-sicas-clientedatos: 0        0192-1668-sicas-comunicaciones: 0        0192-1668-sicas-configuracionbusquedas: 0        0192-1668-sicas-contrato: 0        0192-1668-sicas-controlacceso: 0        0192-1668-sicas-dbkona: 0        0192-1668-sicas-delegado: 0        0192-1668-sicas-demanda: 0        0192-1668-sicas-entidadescomunes: 0        0192-1668-sicas-estadisticas: 0        0192-1668-sicas-gestorcomunicados: 0        0192-1668-sicas-infointer: 0        0192-1668-sicas-informes: 0        0192-1668-sicas-inicio: 0        0192-1668-sicas-modulos: 0        0192-1668-sicas-oferente: 0        0192-1668-sicas-oferta: 0        0192-1668-sicas-personafisica: 0        0192-1668-sicas-pica: 0        0192-1668-sicas-procesosautomaticos: 0        0192-1668-sicas-rest: 0        0192-1668-sicas-serviciosexternos: 0        0192-1668-sicas-sithinlet: 0        0192-1668-sicas-solicitudbusqueda: 0        0192-1668-sicas-webservices: 0        0192-1669-bdi_web: 0        0192-1669-bdi_web_database: 0        0192-1691-ireneu: 6        0192-1700-qpq: 0        0192-1889-cloud-hes-visor-bbdd: 0        0192-2138-ooproxy: 0        0192-2138-REE: 0        0192-2138-REE_WS: 0        0192-2506-avisos: 0        0192-2506-canal_empresa_common: 0        0192-2506-canal_empresa_eina: 0        0192-2506-canal_empresa_portal: 6        0192-2506-canal_empresa_serveis: 0        0192-2506-ce-backend: 4        0192-2510-namante: 0        0192-2510-namaste: 0        0192-2579-CPPAC: 0        0192-2579-CPPAC-bs001: 0        0192-2579-CPPAC-bs002: 0        0192-2632-web-service-spe: 0        0192-2657-tais: 5        0192-2658-SCDIAP: 0        0192-2658-SCDIAP-ADMIN: 0        0192-2680-ARQ-CAN3.4_ANG-ra-ng: 0        0192-2700-TAP-Frontend: 0        0192-2703-GEDAC: 0        0192-2927-geu: 11        0192-2994-sjc: 3        0192-2996-convocatories-bbdd: 0        0192-3021-portal-ciutada-back: 0        0192-3022-cron-dates: 0        0192-3022-esocial-batch: 0        0192-3022-esocial-dynamic-blocks: 0        0192-3022-esocial-jpa-repositories: 0        0192-3022-esocial-properties: 0        0192-3022-esocial-security-efs: 0        0192-3022-esocial-services: 0        0192-3022-portal-empleat-public-back: 0        0192-3022-portal-empleat-public-front: 0        0192-3022-Scripts-DCR: 0        0192-3024-esocial-administracio-backend: 0        0192-3024-esocialArchitecture: 0        0192-3024-eSocial-Architecture-Interop: 0        0192-3024-eSocial-Authorization-Services: 0        0192-3024-esocial-brms-helloworld: 0        0192-3024-esocial-brms-helloworld-hw001: 0        0192-3024-esocial-brms-helloworld-hw002: 0        0192-3024-esocial-brms-helloworld-hw003: 0        0192-3024-eSocial-Core-Front: 0        0192-3024-esocial-corticon-client: 0        0192-3024-esocial-gicar-auth-server: 0        0192-3024-esocialInterfaces: 0        0192-3024-esocial-interop-core: 0        0192-3024-esocial-notifications-manager: 0        0192-3024-esocial-notifications-manager-bl: 0        0192-3024-esocial-notifications-manager-parent: 0        0192-3024-esocialPicsArchitecture: 0        0192-3024-esocial-portal-administracio-front: 0        0192-3024-esocial-regles-corticon: 0        0192-3024-esocial-security-jwt: 0        0192-3024-esocial-valid-auth-server: 0        0192-3072-cejfe-bbdd: 0        0192-3098-soc-expedients: 3        0192-3163-rgc-web-e_formularis: 0        0192-3163-rgc-web-ws: 0        0192-3170_RECVTCPARENT: 0        0192-3170-RECVTCPARENT: 0        0192-3172-eep-backend: 25        0192-3172-eep-frontend: 0        0192-3172-gdoc: 0        0192-3172-pesig: 0        0192-3172-siae: 24        0192-3172-sirh-utils: 0        0192-3172-std: 0        0192-3185-QuaireApp: 2        0192-3201-Altran.DocumentsCreation: 0        0192-3201-incasol.agilepoint: 0        0192-3201-Incasol.AgilePoint: 0        0192-3201-incasol.ali: 0        0192-3201-incasol.ama: 0        0192-3201-Incasol.CNVNET: 0        0192-3201-Incasol.CoreMVC: 0        0192-3201-Incasol.CoreWebApi: 0        0192-3201-Incasol.EnvironmentConfigBuilder: 0        0192-3201-Incasol.Gateway: 0        0192-3201-Incasol.GestorDocumental: 0        0192-3201-Incasol.HttpClientWrapper: 0        0192-3201-Incasol.Identity: 0        0192-3201-incasol.incextnet: 0        0192-3201-Incasol.Infrastructure: 0        0192-3201-Incasol.Infrastructure.Data: 0        0192-3201-incasol.infrastructure.services: 0        0192-3201-incasol.ip: 0        0192-3201-incasol.ip.consumerservice: 0        0192-3201-Incasol.IP.DocumentsReport: 0        0192-3201-Incasol.IP.SchedulerService: 0        0192-3201-incasol.ip.web: 0        0192-3201-incasol.jwt: 0        0192-3201-incasol.mails: 0        0192-3201-incasol.mestres: 0        0192-3201-Incasol.NPA: 0        0192-3201-Incasol.OBI: 0        0192-3201-Incasol.Sap: 0        0192-3201-Incasol.Security: 0        0192-3201-Incasol.SyncronizationSap.ConsumerService: 0        0192-3201-Incasol.Tercers: 0        0192-3201-Incasol.Tercers.ConsumerService: 0        0192-3201-Incasol.Tercers.Web: 0        0192-3204_EGP: 17        0192-3204_EGPFRONT: 0        0192-3204_EGPFRONT-build02: 0        0192-3204_EGPFRONT-build03: 0        0192-3215-roc-backend: 2        0192-3215-roc-frontend: 0        0192-3222_OBSPREU: 1        0192-3227-dsocial_imv: 0        0192-3272-cejfe-bbdd: 0        0192-3283_gicar: 0        0192-3288-gdnabackend: 9        0192-3288-gdnascripts: 0        0192-3288-gdnaweb: 0        0192-3294-fsecat: 0        0192-3294-fsecat_ui: 0        0192-3294-fsecat_ui-build2: 0        0192-3295-bisoc: 0        0192-3295-bisoc_ui: 0        0192-Incasol.OBI: 0        0192-jenkins-autoservei-library: 0        0192-jenkins-delegated-deployment-library: 0        0192-jenkins-oficines-externes-library: 0        0192-jenkins-oqual-library: 0        0192-jenkins-utils-library: 0        0192-prova-bbdd-oracle-cpd1: 0        0192-prova-bbdd-oracle-cpd2: 0        0192-prova-bbdd-postgre-cpd1: 0        0192-prova-maven-library: 0        0192-prova-node-library: 0        0192-prova-punt-net-library: 0        0192-RemedyWSClient: 0        0192-repository-artifactory-cleaner: 0        0192-SIC-jenkins-pipeline-library: 0        0192-test-intcan-2354: 0        0197-portalseguretataall_aws: 4        0197-portalseguretatxcat: 3        0205-bffspa: 0        0205-portal_atc: 3        0205-portaljobs_atc: 0        0205-portalspa_atc: 0        0205-portalsts_atc: 0        0205-pt-apimanager-client-lib: 0        0205-pt_bffspa_atc: 0        0205-pt-bootstrap-mf-theme: 0        0205-pt-commons-client-lib: 0        0205-pt-commons-lib: 0        0205-pt-dali-client-lib: 0        0205-pt-documents-client-lib: 0        0205-pt-gaudi-client-lib: 0        0205-pt_gaudio2_atc: 7        0205-pt-gestions-client-lib: 0        0205-pt_jobs_atc: 1        0205-pt-ongoing-client-lib: 0        0205-pt-osb-client-lib: 0        0205-pt-pagaments-client-lib: 0        0205-pt_pasarelles_atc: 0        0205-pt-presentacions-client-lib: 0        0205-pt-seguretat-client-lib: 0        0205-pt_seu_atc: 3        0205-pt_spa_atc: 8        0205-pt-tributs-client-lib: 0        0205-pt-ui-components-mf-lib: 0        0206-tributs: 17        0227-jovcens: 2        0227-jovcensweb: 0        0261-frm: 0        0280-jovgeij: 4        0280-jovgeijweb: 2        0294-jovnotis: 3        0294-jovnotisweb: 3        0299-PES: 0        0317-0317-RUMI-FRONTEND: 0        0317-rumi-simulacio-backend: 1        0323-dcam: 2        0323-scvv: 0        0328-SGTFNM: 0        0329-SGVIF: 0        0331-bsfconnectorpsgd: 0        0336-jov_sub: 0        0337-cp_scripts: 0        0341-jov_cens: 0        0342-JOV_TITUS: 2        0346-jovterri: 1        0434-Adobe: 0        0434-BBDD: 0        0434-cita-previa-gestio-lib: 0        0434-cita-previa-lib: 0        0434-gicar-gateway: 0        0434-GsitBase: 2        0434-GsitCaoc: 0        0434-gsitcitpre: 0        0434-gsitcitpre-client: 0        0434-gsitcitpre-service: 0        0434-GsitCommons: 0        0434-GsitCommonsSA: 0        0434-gsitcommons-service: 0        0434-GsitCommonsTI: 0        0434-gsitconqxs: 0        0434-gsitconqxs-client: 0        0434-gsit-core-lib-pdf: 3        0434-gsitea: 0        0434-gsitfa: 0        0434-gsitfc: 10        0434-gsitgad: 0        0434-gsitgescts: 0        0434-gsitgescts-client: 0        0434-gsitgescts-service: 0        0434-gsitgf: 1        0434-gsitmestres-service: 0        0434-gsitmi: 0        0434-GsitParent: 0        0434-gsitparent-service: 0        0434-gsit-schemas: 0        0434-gsitserveis-service: 2        0434-GsitSingleSignOn: 0        0434-gsittraint: 1        0434-gsittraint-client: 0        0434-gsittraint-service: 4        0434-GsitXmlBeans: 0        0434-log4j-over-slf4j: 0        0434-netplus: 0        0434-ng-viewnext-lib: 0        0434-pci-connector: 0        0434-PDFSignaturesValidation: 3        0434-seu-client: 0        0434-valid-gateway: 0        0435-gsit3-ta-frontend: 0        0435-ta-backend: 5        0435-ta-batch: 6        0435-ta-frontend: 0        0435-tramitacio-lib: 0        0441-carpeta-ciutadana-backend: 0        0441-carpeta-ciutadana-frontend: 0        0441-gsit3-wc-citaprevia: 0        0441-gsit-lib-registre-consentiments: 0        0441-ovt-consulta-feble: 0        0441-ovt-esborranys-html: 0        0441-ovt-notificacions-i-avisos: 0        0441-ovt-recordatoris-propers: 0        0441-ovt-tramits-recents: 0        0441-proact-api-consentiments-bbdd: 0        0441-proact-api-dades-bbdd: 0        0441-proact-api-serveis-bbdd: 0        0441-proact-lib-commons: 0        0441-proact-lib-pica-avisalert-ecorreu: 0        0441-proact-lib-pica-commons: 0        0441-proact-lib-pica-generics: 0        0441-wallet-bbdd: 0        0441-wallet-frontend-lib: 0        0441-wallet-lib-commons: 0        0441-wallet-pica-avisecorreu-types-master: 0        0441-wallet-pica-common-types-master: 0        0441-wallet-pica-connector-service-master: 0        0441-wallet-pica-generic-types-master: 0        0442-gsit3-core-lib-adobe: 0        0442-gsit3-core-lib-citpre: 0        0442-gsit3-core-lib-commons-api: 0        0442-gsit3-core-lib-seu: 1        0442-gsit3-core-lib-xml: 0        0442-gsit3-core-pom-parent: 0        0442-gsit3-core-pom-parent-api: 0        0463-HUGO: 0        0463-pica3-emissor-lib: 0        0463-pica3-missatgeria-generica: 0        0463-pica3-utils-lib: 0        0463-pica3-xml: 0        0492-PICEM: 0        0501-consultasala_anc: 0        0534-LLETRESAULES: 0        0548-egipci: 0        0556-TradNoOccita: 0        0559-consolidacio_fons_museus: 5        0559-consol_pub: 0        0559-consol_pub_front: 0        0559-job_peces: 0        0559-jobs_con: 0        0559-jobs_ingesta: 2        0559-jobs_pre: 0        0559-jobs_publicacio: 0        0559-webservice_jobs: 0        0570-cercador-invarquit-back: 0        0570-cercador-invarquit-front: 0        0582-cercador-invarque-back: 0        0582-cercador-invarque-front: 0        0597-AulaMestra: 0        0618-TradOccita: 0        0625-VolLlengua: 0        0633-FOC: 1        0635-PremsaPL: 0        0648-GesCerCat: 1        0664-app: 0        0670-SINTESI: 0        0673-SCL: 0        0687-mitel-flex: 0        0692-sitc: 1        0703-CTWEB-bs001: 0        0703-CTWEB-bs002: 0        0794-EADOP: 1        0794-eadop-elastic-rest: 0        0794-eadop-rest: 1        0794-eadop-rest-fontend: 0        0794-eadop-rest-frontend: 0        0819-relic-bbdd: 0        0819-relic-integracions: 0        0819-relic-jpa-model: 0        0819-relic-shared: 0        0829-GEFACT-Alfresco-BackOffice: 36        0829-GEFACT-Alfresco-core: 0        0829-GEFACT-Alfresco-Facturae: 2        0829-GEFACT-Alfresco-REST: 0        0829-GEFACT-Alfresco-WebConsulta: 0        0829-GEFACT-Alfresco-WebService: 0        0829-gefact-icaen-rest: 0        0848-ControlProcessosPO: 0        0857-ecofin-pscp2-common: 0        0857-ecofin-pscp2-db: 0        0857-ecofin-pscp-common: 2        0857-ecofin-pscp-db: 0        0863-admin-reli-backend: 1        0863-admin-reli-frontend: 0        0863-admin-reli-frontend-bs002: 0        0863-admin-reli-frontend-bs003: 0        0865-RPC: 0        0866-ecofin-sd-db: 0        0866-ecofin-sd-pscp-common: 0        0875-suma: 1        0886-eformacio: 0        0886-eformacio_pre: 10        0892-SECRE: 0        0913-gescon: 1        0913-gestor-documental-service: 4        0913-pica-service: 1        0918-conta: 0        0945-treball-per-ocupacions: 0        0950-PTR: 0        0955-0955: 0        0988-lib-ogebase-wl12: 0        0988-lib-ogecataleg-wl12: 0        0988-lib-teimonitoritzacio-wl12: 0        0988-lib-teischemas-wl12: 0        0988-lib-teiwordservice-wl12: 1        0988-mti-brms-model: 0        0988-mti-brms-service: 0        0988-ogeadmin-wl12: 2        0988-tei-brms-service: 0        0988-teiprocessos-wl12: 4        0988-tei-wl12: 1        0988-tei_ws-wl12: 0        0989-mti-wl12: 2        0989-ogebase-wl12: 0        0989-ogecataleg-wl12: 1        1018-RTA_WEB: 0        1018-RTT: 0        1021-QEI: 0        1021-qesi: 0        1023-bae_admin: 0        1034-GEPSE: 0        1035-GSA_ACR: 0        1035-GSA_CFI: 0        1035-GSA_CONF: 0        1035-GSA_CONS: 0        1035-GSA_EEM: 0        1035-GSA_EOI: 0        1035-GSA_GES: 0        1035-GSA_INS: 0        1035-GSA_NUCLI: 0        1035-GSA_PACF: 0        1035-GSA_RBI: 0        1037-MTC: 1        1040-HST_BAL: 0        1040-SII-COMU: 0        1040-SII-FP: 0        1040-SII-WEB: 0        1040-SII-WS: 0        1041-TME: 0        1041-TME_2019003: 0        1041-TME_LOGO: 0        1041-TME_VIS: 0        1046-HTE: 0        1047-AUP: 0        1047-PPA: 0        1047-PPQPIS: 0        1059-prestatgeria: 3        1062-petites_histories: 0        1063-Linkat: 3        1063-linkat_new: 3        1067-RECE: 0        1068-dossier: 4        1068-xtecblocs: 7        1073-epergam: 0        1078-GConcert: 0        1078-GConcertTaules: 0        1086-CORREU_CLIENTWS: 0        1086-POE: 0        1089-e13_cfp: 0        1089-e13_cfp_dogc: 0        1089-e13_cfp_icqp: 0        1096-AWA-CLIENTWS: 0        1096-FDC: 0        1096-fdc_apex: 0        1099-AWA: 0        1099-awa-consultaapp: 0        1099-AWA-CONSULTAAPP: 0        1099-AWA-WS: 0        1099-gavis: 0        1099-GUAC: 0        1099-GUX: 0        1099-idi: 0        1099-mau: 0        1099-RUT: 0        1100-ARC: 0        1102-A4S: 0        1102-A4S-WS: 0        1102-A6P: 0        1102-A6P-WS: 0        1102-AGD: 0        1102-AVA_HST: 0        1102-ave: 0        1102-avi: 0        1104-CCP: 0        1104-CWS: 0        1104-OSBUTILS: 0        1104-qcg: 0        1104-utils: 0        1106-QCEN: 0        1111-BORPAS: 0        1111-BORPAS-bs001: 1        1111-BORPAS-bs002: 1        1113-CARNETDOCENT: 0        1114-OBR: 0        1127-CSF: 0        1134-marsupial: 0        1135-OFE_EDU: 0        1139-PUNTEDU_AVAL: 0        1139-PUNTEDU_QUESTIONARI: 0        1139-PUNTEDU_SOL: 0        1148-secretaria: 8        1151-AAC_PREINS: 0        1151-AAC_PREINS_ADM: 0        1151-GSA_AAC: 0        1151-GSA_AUC: 0        1151-GSA_OUC: 0        1151-GSA_RHA: 0        1153-GEL: 0        1154-OVT_PUBLI: 0        1154-OVT_PUBLI_ADM: 0        1160-AAE: 0        1160-AAE-ng: 1        1160-ATRI-backend: 4        1160-atri-common: 0        1160-ATRI-frontend: 0        1160-cer: 0        1160-CER: 0        1160-cer-ng: 1        1160-CER-ng: 0        1160-cld: 0        1160-CLD: 0        1160-cld-ng: 1        1160-CLD-ng: 0        1160-generic-canigo3-rs-utils: 0        1160-generic-canigo3-utils: 0        1160-lps: 0        1160-lps-ng: 1        1160-ra-ng: 0        1160-selec: 0        1160-selec-ng: 1        1160-sirhTokenHandler: 0        1164-fp_bdc: 0        1168-web-de-lespai-danalisi: 0        1169-quadre-de-comandament-operatiu: 0        1183-fp_portal: 4        1191-cron_pressupost: 0        1191-fp_pressupost: 0        1200-gexam: 0        1207-GPL: 0        1231-cron_expedients: 0        1231-cron_muface: 0        1231-fp_expedients: 10        1231-fp_nomenaments: 2        1231-fp_plapensions: 0        1231-fp_sipweb: 0        1231-fp_wsence: 0        1231-fp_wsfp: 0        1231-fp_wsgf: 0        1231-rrhh-connexiohostutil: 0        1231-rrhh-jdbc: 0        1247-informes-independents: 0        1251-BTL: 0        1252-gov_publicacions: 0        1276-etc-lib-patient-chart-core: 0        1276-etpat-backend-common: 0        1363-AJG: 7        1363-CJG: 0        1364-AJR: 0        1366-BLJ: 0        1367-CCP: 0        1370-AGU: 0        1370-EDI: 0        1370-EST: 0        1370-EXX: 4        1370-GDO: 3        1370-IJU: 0        1370-MIG: 0        1370-MRQ: 0        1370-mst_cl_serveiscachejats: 0        1370-ORG: 1        1370-RMA: 0        1370-TRA: 2        1370-TRA-API: 0        1370-TRACOM: 0        1370-trp00-gen-lib_cl_fe: 0        1370-trp00-gen-lib_cl_fe-bs002: 0        1370-trp00-gen-lib_cl_fe-bs003: 0        1370-uni_cl_serveiscachejats: 0        1370-usr_cl_bbdd: 0        1370-VEX: 0        1371-BIJUS: 0        1371-COR: 3        1371-COT: 2        1371-GDE: 0        1371-GIT: 0        1371-GPP: 0        1371-gppx-bs003: 0        1371-gppx-bs004: 0        1371-GUS: 0        1371-IAP-bs003: 0        1371-IAP-bs005: 0        1371-IMLCFC: 0        1371-NUM: 0        1371-PAR: 0        1371-POR: 0        1371-RIR: 6        1371-SIG: 0        1371-T2D: 0        1371-TME: 0        1371-TTA-ATEC-bs003: 0        1371-TTA-ATEC-bs004: 0        1373-FJG: 0        1374-FPJ: 0        1377-GPO: 0        1383-RFIDGD-J2EE: 0        1396-SJP: 0        1398-TMS: 0        1435-asj: 0        1478-1478_EsportFederat_back-end: 0        1478-1478_EsportFederat_front-end: 0        1504-gabjur-connectors: 0        1504-gabjur-documentum-business-core: 0        1504-gabjur-documentum-web-core: 0        1504-gabjur-j2ee-business-core: 0        1504-gabjur-j2ee-scan-business: 0        1504-gabjur-j2ee-services-root: 0        1504-gabjur-j2ee-web-core: 1        1504-gabjur-services-core: 1        1504-gabjur-tsystems-tree: 0        1504-gabjur-war-ad: 2        1504-gabjur-war-ax: 2        1504-gabjur-war-cn: 2        1504-gabjur-war-cs: 2        1504-gabjur-war-ct: 2        1504-gabjur-war-fd: 2        1504-gabjur-war-gn: 2        1504-gabjur-war-rd: 2        1504-gabjur-war-rh: 2        1511-gpx: 1        1514-gtc: 4        1514-gtc-bs001: 4        1514-gtc-bs002: 4        1561-backend_java: 0        1561-frontend-angular: 0        1668-core-admin: 0        1668-core-agenda: 0        1668-core-assemblies: 0        1668-core-auxiliares: 0        1668-core-busquedaparametrizada: 0        1668-core-candidato: 0        1668-core-clientedatos: 0        1668-core-comunicaciones: 0        1668-core-configuracionbusquedas: 0        1668-core-contrato: 0        1668-core-controlacceso: 0        1668-core-dbkona: 0        1668-core-delegado: 0        1668-core-demanda: 0        1668-core-entidadescomunes: 0        1668-core-estadisticas: 0        1668-core-gestorcomunicados: 0        1668-core-infointer: 0        1668-core-informes: 0        1668-core-inicio: 0        1668-core-modulos: 0        1668-core-oferente: 0        1668-core-oferta: 0        1668-core-personafisica: 0        1668-core-pica: 0        1668-core-procesosautomaticos: 0        1668-core-rest: 0        1668-core-serviciosexternos: 0        1668-core-sithinlet: 0        1668-core-solicitudbusqueda: 0        1668-core-webservices: 0        1669-1669-bdi_web: 0        1669-bdi_web: 2        1669-bdi_web_database: 0        1672-GPB: 4        1673-JERJES: 4        1675-dagda: 0        1675-feina-activa-java-core: 0        1677-consultawebservicegdi: 0        1677-CTR: 0        1682-accesnet: 0        1682-accesnet-core: 1        1682-accesnet-ws-pica: 0        1682-acces-universitat-backend: 1        1682-acces-universitat-frontend: 0        1682-pau-negoci: 0        1682-preinscripcio-negoci: 0        1682-spring-deps: 0        1682-wicket-deps: 0        1691-ireneu: 1        1693-guau: 0        1696-pge: 0        1700-core: 0        1700-core-hibernate: 0        1700-core-tinymceplugins: 0        1700-core-web: 0        1700-core-wicket: 0        1700-qpq: 0        1701-rap: 0        1705-centres: 0        1706-repre: 0        1726-BIBDIG: 1        1733-CTU: 1        1745-edipol: 0        1745-webmap_sicint: 0        1747-GAF: 0        1751-mucedi: 0        1759-sicc: 0        1760-INSGRI: 1        1765-MAP: 2        1765-sgpext-client: 0        1768-BARRIS: 0        1781-ovc-xmlbeans: 0        1781-REGIBI: 0        1782-RISCOS: 1        1783-rpuc_backoffice: 0        1783-RPUC_backoffice: 0        1783-rpuc_consulta: 0        1783-rpuc_model: 0        1783-rpuc_portal: 0        1794-SQA: 0        1805-COSTRM: 2        1807-TER: 0        1808-TEU: 11        1808-teu-ciaa: 3        1808-teu-pcaa: 3        1808-TEU-PDOC: 3        1816-scriptsbbdd: 0        1817-SANFER: 0        1825-MUC: 4        1841-CPT_WEB: 0        1848-LLW: 1        1851-SEF: 3        1889-1889-cloud-hes-cercador-bbdd: 0        1889-1889-cloud-hes-integradorimatges-bbdd: 0        1889-1889-cloud-hes-ra-ng: 0        1889-1889-cloud-hes-spring-boot-core-lib: 0        1889-1889-cloud-hes-visor-bbdd: 0        1889-1889-cloud-integradorimatges-commons-lib: 0        1917-ice-entrada-de-dades: 0        2014-PROGRAMACAT: 2        2017-ItinerarisApren: 0        2020-web-service: 0        2039-cepd: 0        2039-pcedcg: 0        2039-pcedcg-ui: 0        2039-pcedcg-ui-backoffice: 0        2041-manteniment-codis: 0        2041-manteniment-ui: 0        2050-cds: 0        2057-sigrag: 0        2074-PDCENTRE: 0        2075-ORATORIA: 0        2076-MSG: 0        2076-SML: 0        2076-SSCC-EnviaCorreu: 0        2081-CORALS: 0        2083-CAMPS: 0        2087-ASAELE: 0        2088-ACO: 0        2089-aplisstt: 0        2089-reva: 0        2090-ateneu: 8        2097-sistema-indicadors-ocupacio-publica: 0        2098-informes-estadistics-mensuals: 0        2138-REE: 0        2138-REE_WS: 0        2148-premsa: 0        2210-SIGC: 1        2239-EDOCS: 0        2506-canal_empresa_common: 5        2506-canal_empresa_eina: 0        2506-canal_empresa_portal: 0        2506-canal_empresa_serveis: 0        2506-ce-backend: 4        2506-ce-bbdd: 0        2506-ce-portal-frontend: 0        2506-gsit3-ce-lib-commons: 5        2506-tramits-gestions: 0        2506-visio-expedient-lib: 0        2507-Ressenyes: 0        2510-namante: 0        2510-namaste: 0        2514-icaen: 1        2516-GTR: 30        2516-historic_sir: 0        2522-sigtur: 4        2523-GeoBI: 0        2526-gipe: 1        2527-SCOP: 0        2528-GFSE: 0        2535-sigcorp-backend: 30        2535-sigcorp-frontend: 0        2535-sigcorp-viewer: 0        2541-SEFAC: 1        2541-SEFAC_TEST: 0        2545-fp_wsmarcatges: 0        2551-Mapa-de-mesures: 0        2551-Mapa-de-mesures-bs001: 0        2551-Mapa-de-mesures-bs002: 0        2559-canigo.integration.antivirus.indra: 0        2559-connectorJsonPSGD: 0        2559-gicar-service: 0        2559-gidecat-connector: 0        2559-gro-lite-types: 0        2559-pica-avisECorreu-types: 0        2559-pica-common-types: 0        2559-pica-connector-service: 0        2559-pica-eCopia-types: 0        2559-pica-ged-types: 0        2559-pica-generic-types: 0        2559-pica-grd-types: 0        2559-pica-gro-types: 0        2559-pica-nt-types: 0        2559-pica-psis-types: 0        2559-psd-service: 0        2559-tdps-connector-service: 0        2559-tei-ibt-types: 0        2559-TGAuditoria: 0        2559-TGModel: 0        2559-TGServeis: 0        2559-tgserveis-connector: 0        2559-TramitadorGeneric: 0        2559-TramitadorGenericWeb: 1        2560-CCP: 0        2567-TIPGRI: 0        2577-jenkins-sonar-scanner-configuration: 0        2577-jenkins-sonar-scanner-configuration-library: 0        2578-QEA: 22        2579-CPPAC: 0        2579-CPPAC-bs001: 0        2579-CPPAC-bs002: 0        2580-EAPPAC: 3        2580-NPAC: 8        2580-npac-perws-axis2-client: 0        2580-VPPAC: 3        2581-EMC: 0        2597-REGMAQ: 26        2601-TAXX-bs003: 0        2601-TAXX-bs004: 0        2612-Aula_Virtual: 10        2612-aula_virtual_pre: 19        2632-2632-Web-Service-SPE: 0        2647-SIFECAT1420: 99        2657-tais: 5        2657-transferencies: 0        2658-canigo.integration.sarcat.pica: 1        2658-SCDIAP: 0        2658-SCDIAP-ADMIN: 0        2658-SCDIAP-CORE: 0        2662-tccsp-pica-common-types: 0        2662-tccsp-pica-connector-service: 0        2662-tccsp-pica-ecopia-types: 0        2662-tccsp-pica-ged-types: 0        2662-tccsp-pica-generic-types: 0        2662-tccsp-pica-grd-types: 0        2662-tccsp-pica-gro-types: 0        2662-tccsp-pica-ibt-types: 0        2662-tccsp-pica-psisi-types: 0        2662-tccsp-pica-psis-types: 0        2662-tccsp-pica-sarcat-types: 0        2662-trec-comu: 0        2680-arq-can1.4-ejbutils: 0        2680-arq-can1.4-ejcat-utils: 0        2680-arq-can1.4-juslog-web: 0        2680-arq-can1.4-justicia-commons: 2        2680-arq-can1.4-justicia-common-security: 0        2680-arq-can1.4-justicia-common-security-nosso: 0        2680-arq-can1.4-jusweb: 0        2680-arq-can1.4-otj-dwr2-upgrade: 0        2680-arq-can1.4-valuelistutils: 0        2680-arq-can1.4-vlhext: 0        2680-arq-can3.1-hibernate: 0        2680-arq-can3.1-justicia-canigo-common: 0        2680-arq-can3.1-justicia-canigo-test: 0        2680-arq-can3.1-simple-jndi: 0        2680-arq-can3.2_ang-justicia-ng: 0        2680-arq-can3.2_bkend-justicia-canigo3-rs-utils: 0        2680-arq-can3.2_bkend-justicia-canigo3-utils: 0        2680-arq-can3.4_ang-justicia-ng: 0        2680-arq-can3.4_ang-justicia-ng_11: 0        2680-arq-can3.4_ang-ra-ng: 0        2680-arq-can3.4_ang-ra-ng_11: 0        2680-arq-can3.4_ang-ra-ng_9: 0        2680-arq-can3.4-jus-canigo3.4-audit-cloud-lib: 0        2680-arq-can3.4-jus-canigo3.4-cache-cloud-lib: 0        2680-arq-can3.4-jus-canigo3.4-cloud-lib: 9        2680-arq-can3.4-jus-canigo3.4-ejcatplus-cloud-lib: 0        2680-arq-can3.4-jus-canigo3.4-spring-data-mongodb: 0        2680-arq-can3.4-jus-canigo3.4-transversal-cloud-lib: 0        2680-arq-can3.4-jus-canigo3.6-cache-cloud-lib: 0        2680-arq-can3.6_ang-justicia-ng_13: 0        2680-arq-can3.6_ang-ra-ng_13: 0        2680-arq-can3.6-hibernate-core: 0        2680-arq-can3.6-jus-canigo3.4-ejcatplus-cloud-lib: 0        2680-arq-can3.6-jus-canigo3.6-cache-cloud-lib: 0        2680-arq-can3.6-jus-canigo3.6-cloud-lib: 9        2680-arq-filetransferutils: 1        2680-arq-osbmail: 0        2680-arq-redabo-utils: 0        2680-arq-traductor-utils: 0        2680-arq-wssclient: 0        2680-CEE: 0        2680-f004-arq-ejcatlib: 0        2680-GEF: 0        2680-gen: 0        2680-GRP: 1        2680-ra-ng: 0        2680-RGU: 0        2680-SFC: 5        2680-sso: 5        2680-STD: 0        2680-std-osb-utils: 0        2680-TDJ: 3        2700-auth: 0        2700-is3-components-frontend: 0        2700-is3-core-frontend: 4        2700-MonitorFuncional: 1        2700-MonitorOperatiu: 2        2700-MonitorTest: 0        2700-tap-backend: 0        2700-tap-frontend: 0        2700-tem-backend: 0        2700-tem-frontend: 0        2700-TFD-ConsolaCreacio: 2        2700-TFD-ConsolaPublicacio: 1        2700-tfd-formules: 0        2700-TFD-Renderitzacio: 0        2700-TFD-ServeiFormularis-bs001: 0        2700-TFD-ServeiFormularis-bs003: 0        2700-tmr-backend: 0        2700-tmr-frontend: 0        2700-tsp-frontend: 0        2700-ValidadorSAML: 1        2700-ValidadorWIFI: 0        2703-GEDAC: 0        2704-RALC: 0        2715-rpcac-backend: 0        2784-ctc-db: 0        2788-PDR: 4        2803-PATT: 2        2806-pci_angular: 1        2905-axis2-kernel-1.3-indra-patch: 3        2905-gsit-xmlbeans: 0        2905-WSMSAN: 1        2906-PEBAC: 0        2906-PEBAX: 0        2924-bigdata_pro: 0        2933-cultura-sigcorp-viewer: 2        2936-gs-java: 0        2936-gs-noma-java: 0        2938-visor_pdr: 0        2942-atc-sigcorp-viewer: 1        2945-sostic-bs001: 2        2945-sostic-bs002: 3        2950-recogidasaxis: 0        2950-transportesaxis: 0        2950-VCPE: 2        2950-VCPE-bs001: 0        2950-VCPE-bs002: 0        2950-VCPE-bs003: 0        2950-VCPE-bs004: 3        2950-ventasaxis: 0        2951-comun: 3        2951-omg: 4        2951-regpae_back: 2        2951-regpae_front: 0        2951-ropcat: 3        2952-COPE: 1        2962-catjoc-bus-client: 0        2962-catjoc-commons: 0        2962-catjoc-integracions: 0        2965-GESPRO: 0        2978-EED: 0        2978-OTG: 0        2982-Electia: 2        2990-planificador: 0        2993-GRAM-common: 0        2994-SJC: 8        2996-convocatories-bbdd: 0        2998-AVEP: 1        2998-ep-canigo3-rs-utils: 0        2998-ep-canigo3-utils: 0        2998-epextr: 0        2998-EPEXX-bs005: 0        2998-EPEXX-bs007: 4        2998-epgus-aplicacions: 0        2998-epgus-unitats: 0        2998-epgus-usuaris: 0        2998-EPPLA-bs005: 0        2998-EPPLA-bs007: 0        2998-EPSIG: 0        2998-epsso: 2        2998-EPSTQ: 0        2998-EPSTQ-bs005: 0        2998-EPSTQ-bs007: 0        2998-eptme-configuracio: 0        2998-eptme-dades: 0        2998-eptokenhandler: 0        2998-EPTRA: 0        2998-gepip-back: 0        2998-jus-audit: 0        3003-SGBP-bs003: 0        3003-SGBP-bs004: 0        3003-SGBP-bs005: 0        3021-portal-ciutada-back: 0        3022-cron-dates: 0        3022-esocial-jpa-repositories: 0        3022-esocial-services: 0        3022-portal-empleat-public-back: 0        3022-Scripts-DCR: 0        3022-tsocial-brms-estudi: 0        3022-tsocial-brms-estudi-grup1: 0        3022-tsocial-brms-estudi-grup2: 0        3022-tsocial-brms-estudi-grup3: 0        3022-tsocial-brms-estudi-zip: 0        3022-tsocial-brms-nomina: 0        3022-tsocial-brms-proposta-grup1: 0        3022-tsocial-brms-proposta-grup2: 0        3022-tsocial-brms-proposta-grup3: 0        3022-tsocial-brms-proposta-grup4: 0        3023-portal-agencies-colaboradores-back: 0        3024-eSocial-Architecture-Interop: 0        3024-esocial-brms-client: 0        3024-esocial-brms-helloworld: 0        3024-esocial-brms-helloworld-hw001: 0        3024-esocial-brms-helloworld-hw002: 0        3024-esocial-brms-helloworld-hw003: 0        3024-eSocial-Core-Front: 0        3024-esocial-corticon-client: 0        3024-esocialInterfaces: 0        3024-esocial-interop-core: 0        3024-esocial-notifications-manager: 0        3024-esocial-notifications-manager-bl: 0        3024-esocial-notifications-manager-parent: 0        3024-esocialPicaArchitecture: 0        3024-esocial-portal-administracio-front: 0        3024-esocial-regles-corticon: 0        3039-padoct_batch_archive: 0        3039-padoct_batch_completarmetadatos: 0        3039-padoct_batch_consolidacion: 0        3039-padoct_batch_decode_base64: 0        3039-padoct_batch_deprecado: 0        3039-padoct_batch_odtpdf: 0        3039-padoct_batch_version: 0        3039-padoct_files_multimedia: 0        3039-padoct_opentext_client: 0        3039-padoct_opentext_robot: 0        3039-padoct_pro: 0        3039-padoct_rest_largefile: 0        3039-padoct_rpa_csv: 0        3039-pdsit_migration_escrituras: 0        3049-ArxiuMemoriaHistorica-bs003: 0        3049-ArxiuMemoriaHistorica-bs004: 0        3049-ArxiuMemoriaHistorica-bs005: 0        3049-ArxiuMemoriaHistorica-bs006: 0        3058-fiances-mongo-scripts: 0        3058-fiances-postgresql-scripts: 0        3058-slisync-postgresql-scripts: 0        3058-users-postgresql-scripts: 0        3070-GEAC_Corp: 0        3070-geac_corp_wintask: 0        3072-CEJFE-APRENGES: 1        3072-CEJFE-APRENGES-INSCRIPCIONS: 2        3072-CEJFE-BBDD: 0        3072-CEJFE-FRONTEND: 0        3072-CEJFE-FRONTEND-INSCRIPCIONS: 0        3083-fc-bbdd: 0        3083-fc-front: 0        3083-fc-front-common: 0        3083-fc-notifications: 0        3083-fc-shared: 0        3098-soc-auth: 0        3098-soc-batchs: 0        3098-soc-colaboracio: 0        3098-soc-commons: 0        3098-soc-dadesmestres: 0        3098-soc-documentacio: 0        3098-soc-expedients: 0        3098-soc-front: 0        3098-soc-informes: 0        3098-soc-instruments: 0        3098-soc-plantilles: 0        3098-soc-seguretat: 0        3098-soc-xml-beans: 0        3163-rgc-web-angular: 0        3163-rgc-web-backend: 0        3163-rgc-web-e_formularis: 0        3163-rgc-web-ws: 0        3170-RECVTCPARENT: 0        3172-EEP-backend: 25        3172-EEP-frontend: 1        3172-GDOC: 4        3172-GSIG: 0        3172-pesig: 0        3172-SIAE: 24        3172-sirh-utils: 0        3173-ROPER: 0        3173-ROPER_UI: 0        3174-ecofin-corticon: 0        3174-geec-docx-stamper: 0        3185-QuaireApp: 1        3192-TAISARS: 0        3201-Incasol.AgilePoint: 0        3201-Incasol.ALI: 0        3201-Incasol.AMA: 0        3201-Incasol.CNVNET: 0        3201-Incasol.Gateway: 0        3201-Incasol.GestorDocumental: 0        3201-Incasol.Identity: 0        3201-Incasol.IncExtNet: 0        3201-Incasol.Infrastructure.Services: 0        3201-Incasol.IP: 0        3201-Incasol.IP.ConsumerService: 0        3201-Incasol.IP.DocumentsReport: 0        3201-Incasol.IP.SchedulerService: 0        3201-Incasol.IP.Web: 0        3201-Incasol.Mails: 0        3201-Incasol.Mestres: 0        3201-Incasol.NPA: 0        3201-Incasol.OBI: 0        3201-Incasol.Sap: 0        3201-Incasol.SyncronizationSap.ConsumerService: 0        3201-Incasol.Tercers: 0        3201-Incasol.Tercers.ConsumerService: 0        3201-Incasol.Tercers.Web: 0        3204-EGP: 21        3204-EGPFRONT: 0        3205-censcom_xmlbuilder: 0        3215-roc-backend: 1        3215-roc-frontend: 0        3216-professorat: 1        3217-DUNWEB: 0        3217-DUNWEB-bsDun001: 1        3217-DUNWEB-bsDun002: 1        3218-FEMP: 21        3218-FEMP-bs001: 21        3218-FEMP-bs002: 0        3218-FEMP-bs003: 21        3218-FEMP-bs004: 21        3218-FEMP-bs005: 0        3218-FEMP-bs006: 0        3218-FEMP-bs007: 21        3222-OBSPREU: 1        3225-centres: 0        3227-dsocial_consulta: 0        3227-dsocial_consulta_ui: 0        3227-dsocial_gestoralertes: 4        3227-dsocial_gestoralertes_ui: 0        3227-dsocial_imv: 0        3227-dsocial_imv_ui: 0        3227-dsocial_llibreries: 0        3227-DSOCIAL-Llistats: 0        3227-dsocial_pica: 0        3227-dsocial_pub2mdm: 0        3227-dsocial_sentinella: 4        3227-dsocial_sentinella_ui: 0        3227-DSOCIAL_SERVEIS: 0        3227-dsocial_serveis_addressdoctor: 0        3227-dsocial_serveis_ei: 0        3227-dsocial_serveis_mdm: 0        3227-DSOCIALS_UI: 0        3227-espaidoc-api: 1        3227-espaidoc-backoffice: 0        3227-espaidoc-common: 0        3227-espaidoc-scheduler: 0        3227-espaidoc-security: 0        3227-tsu: 0        3247-ecentre: 0        3256-GESTILS: 0        3272-tf-bootstrap-spa-theme: 0        3272-tf-canigo-integracio-pica-fix-lib: 0        3272-tf-commons-document-lib: 0        3272-tf-commons-lib: 0        3272-tf-commons-spa-lib: 0        3272-tf-gidecat-client-lib: 0        3272-tf-gs-client-lib: 0        3272-tf-pica-client-lib: 2        3272-tf-psd-client-lib: 0        3272-tf-valid-client-lib: 0        3272-ui-component-spa-lib: 0        3283-audiovisuals: 0        3283-gicar: 0        3286-bustia-etica-denuncies: 0        3288-GdNABackend: 7        3288-GdNAScripts: 0        3288-GdNAWeb: 0        3294-fsecat: 2        3294-fsecat_ui: 0        3295-bisoc: 0        3449-backend: 0        3449-frontal: 0        3556-aprenges-bbdd-drets-socials: 0        3556-aprenges-drets-socials: 1        3556-aprenges-drets-socials-inscripcions: 2        3556-aprenges-frontend-drets-socials: 0        3556-aprenges-frontend-inscripcions-drets-socials: 0        cpd1-jenkins-shared-library: 0        cpd2-jenkins-shared-library: 0        cpd3-mc-jenkins-shared-library: 0        cpd3-nex-jenkins-shared-library: 0        cpd4-jenkins-shared-library: 0        null-null: 0        cat.gencat.ctti.sic:RemedyWSClient: 0       
