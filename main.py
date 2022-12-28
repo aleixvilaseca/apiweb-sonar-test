@@ -15,7 +15,7 @@ from django.http import HttpResponse
 from tqdm import tqdm as pretty_progress_bar
 
 
-def get_values(request, key_list, sonar, total, measure, value, ncloc, sqale_debt_ratio, duplicated): 
+def get_values(request, key_list, sonar, total, measure, value, ncloc, maintainability, duplicated, debt_sec): 
 
     print('Connection to Sonarqube')
     url = "https://codi.qualitat.solucions.gencat.cat/"
@@ -58,10 +58,56 @@ def get_values(request, key_list, sonar, total, measure, value, ncloc, sqale_deb
                     ncloc = 0
                 else:    
                     ncloc = data["component"]["measures"][0]["value"]
-                    ncloc = int(data["component"]["measures"][0]["value"])
+                    ncloc = int(ncloc)
 
         else:
             print('Error: %s:%s' %(key, api_url_sev.status_code))
+
+        for key in key_list:
+            if key is not None:
+                
+                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=sqale_debt_ratio&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+
+                if api_url_sev.status_code == 200:
+                    data = api_url_sev.json()
+                    
+                    maintainability = data["component"]["measures"][0]["value"]
+                    maintainability = float(data["component"]["measures"][0]["value"])
+                    maintainability = (100 - maintainability) / 100
+                    if maintainability < 0: maintainability = 0
+
+                    with open('reports/technical_debt.txt', 'a') as f:
+                        f.write(' %s: %s \r      ' %(key, maintainability))    
+                else:
+                    print('Error: %s' %(api_url_sev.status_code))
+
+
+        for key in key_list:
+            if key is not None:
+                
+                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/search?ps=100&projectKeys=%s&metricKeys=security_remediation_effort" %(key), auth=HTTPBasicAuth(username, password))
+
+                if api_url_sev.status_code == 200:
+                    data = api_url_sev.json()
+                    debt_sec = (data["measures"][0]["value"])
+                    debt_sec = int(debt_sec)
+
+                    if ncloc != 0:
+
+                        debt_sec = debt_sec / 60 # convert minutes to hours
+                        debt_sec = debt_sec / 8 # hours into working days
+                    
+                        debt_sec = (debt_sec / (ncloc * 0.06)) * 100
+
+                        # technical debt security
+                        debt_sec = ((100 - debt_sec) / 100)
+                        if debt_sec < 0: debt_sec = 0
+                        debt_sec = round(debt_sec, 2)
+
+                with open('reports/technical_debt_sec.txt', 'a') as f:
+                    f.write(' %s: %s \r      ' %(key, debt_sec))    
+        else:
+            print('Error: %s' %(api_url_sev.status_code))
 
         for key in key_list:
             if key is not None:
@@ -73,33 +119,15 @@ def get_values(request, key_list, sonar, total, measure, value, ncloc, sqale_deb
                     duplicated = data['measures'][0]['value']
                     duplicated = float(data['measures'][0]['value'])
 
-                    duplicated = (duplicated / ncloc) * 100
+                    duplicated = round((duplicated / ncloc) * 100, 3)
 
-                    # duplicated code
+                    """# duplicated code
                     if duplicated > 0: duplicated = 0.5
                     elif duplicated == 0: duplicated = 1
-                    else: duplicated = 0
+                    else: duplicated = 0"""
 
                     with open('reports/duplicated_lines.txt', 'a') as f:
                         f.write(' %s: %s \r      ' %(key, duplicated))
-                else:
-                    print('Error: %s' %(api_url_sev.status_code))
-
-        for key in key_list:
-            if key is not None:
-                
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=sqale_debt_ratio&ps=100" %(key), auth=HTTPBasicAuth(username, password))
-
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
-                    
-                    sqale_debt_ratio = data["component"]["measures"][0]["value"]
-                    sqale_debt_ratio = float(data["component"]["measures"][0]["value"])
-                    sqale_debt_ratio = (100 - sqale_debt_ratio) / 100
-                    if sqale_debt_ratio < 0: sqale_debt_ratio = 0
-
-                    with open('reports/technical_debt.txt', 'a') as f:
-                        f.write(' %s: %s \r      ' %(key, sqale_debt_ratio))    
                 else:
                     print('Error: %s' %(api_url_sev.status_code))
 
@@ -201,4 +229,4 @@ def get_values(request, key_list, sonar, total, measure, value, ncloc, sqale_deb
     
 if __name__ == "__main__":
 
-    get_values(request=None, key_list=['key'], sonar=None, total=['total'], measure=['measure'], value=['value'], ncloc=['ncloc'], sqale_debt_ratio=['sqale_debt_ratio'], duplicated=['duplicated'])
+    get_values(request=None, key_list=['key'], sonar=None, total=['total'], measure=['measure'], value=['value'], ncloc=['ncloc'], maintainability=['maintainability'], duplicated=['duplicated'], debt_sec=['debt_sec'])
