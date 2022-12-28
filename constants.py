@@ -3,10 +3,6 @@ SONAR_PASSWORD = 'CroLeveStM'
 
 # Applications to exclude
 APPLICATIONS_TO_EXCLUDE = [
-    "0192-3024-esocial-brms-helloworld",
-    "0192-3024-esocial-brms-helloworld-hw001",
-    "0192-3024-esocial-brms-helloworld-hw002",
-    "0192-3024-esocial-brms-helloworld-hw003",
     "0192-Incasol.OBI",
     "0192-jenkins-autoservei-library",
     "0192-jenkins-delegated-deployment-library",
@@ -23,5 +19,6 @@ APPLICATIONS_TO_EXCLUDE = [
     "cpd3-mc-jenkins-shared-library",
     "cpd2-jenkins-shared-library",
     "cpd1-jenkins-shared-library",
-    "null-null"
+    "null-null",
+    "cat.gencat.ctti.sic:RemedyWSClient"
 ]
