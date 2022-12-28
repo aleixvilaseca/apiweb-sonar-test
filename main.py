@@ -15,7 +15,7 @@ from django.http import HttpResponse
 from tqdm import tqdm as pretty_progress_bar
 
 
-def get_values(request, key_list, sonar, total, measure, value, ncloc, maintainability, duplicated, debt_sec): 
+def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, security_debt, reliability, technical_debt, security_rating, vulnerabilities, sblocker, scritical, blocker, critical): 
 
     print('Connection to Sonarqube')
     url = "https://codi.qualitat.solucions.gencat.cat/"
@@ -44,82 +44,109 @@ def get_values(request, key_list, sonar, total, measure, value, ncloc, maintaina
 
     print('Getting values for project') 
     
-    try:      
+    try:
+
         for key in key_list:
             if key is None or key == "":
 
                 continue
                 
-            api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=ncloc&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+            api_url_ncloc = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=ncloc&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-            if api_url_sev.status_code == 200:
-                data = api_url_sev.json()
+            if api_url_ncloc.status_code == 200:
+                data = api_url_ncloc.json()
                 if data["component"]["measures"] == []:
                     ncloc = 0
                 else:    
                     ncloc = data["component"]["measures"][0]["value"]
                     ncloc = int(ncloc)
 
-        else:
-            print('Error: %s:%s' %(key, api_url_sev.status_code))
+            else:
+                print('Error: %s: %s' %(key, api_url_ncloc.status_code))
 
         for key in key_list:
             if key is not None:
                 
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=sqale_debt_ratio&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_maintainability = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=sqale_debt_ratio&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
-                    
+                if api_url_maintainability.status_code == 200:
+                    data = api_url_maintainability.json()
                     maintainability = data["component"]["measures"][0]["value"]
-                    maintainability = float(data["component"]["measures"][0]["value"])
-                    maintainability = (100 - maintainability) / 100
-                    if maintainability < 0: maintainability = 0
 
-                    with open('reports/technical_debt.txt', 'a') as f:
-                        f.write(' %s: %s \r      ' %(key, maintainability))    
-                else:
-                    print('Error: %s' %(api_url_sev.status_code))
+                    if maintainability == None:
+                        maintainability = 0
 
+                    maintainability = float(maintainability)
 
-        for key in key_list:
-            if key is not None:
-                
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/search?ps=100&projectKeys=%s&metricKeys=security_remediation_effort" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_reliability = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=reliability_rating&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
-                    debt_sec = (data["measures"][0]["value"])
-                    debt_sec = int(debt_sec)
+                if api_url_reliability.status_code == 200:
+                    data = api_url_reliability.json()
+                    reliability = data["component"]["measures"][0]["value"]
+
+                    if reliability == None:
+                        reliability = 0
+
+                    reliability = float(reliability)
 
                     if ncloc != 0:
 
-                        debt_sec = debt_sec / 60 # convert minutes to hours
-                        debt_sec = debt_sec / 8 # hours into working days
+                        reliability = reliability / 60 # convert minutes to hours
+                        reliability = reliability / 8 # hours into working days
                     
-                        debt_sec = (debt_sec / (ncloc * 0.06)) * 100
+                        reliability = (reliability / (ncloc * 0.06)) * 100
 
-                        # technical debt security
-                        debt_sec = ((100 - debt_sec) / 100)
-                        if debt_sec < 0: debt_sec = 0
-                        debt_sec = round(debt_sec, 2)
+                technical_debt = (reliability + maintainability)
+                technical_debt = ((100 - technical_debt) / 100)
+                if technical_debt < 0: technical_debt = 0
+                technical_debt = round(technical_debt, 2)
 
-                with open('reports/technical_debt_sec.txt', 'a') as f:
-                    f.write(' %s: %s \r      ' %(key, debt_sec))    
-        else:
-            print('Error: %s' %(api_url_sev.status_code))
+                with open('reports/technical_debt.txt', 'a') as f:
+                    f.write(' %s: %s \r      ' %(key, technical_debt)) 
+
+            else:
+                print('Error: %s: %s' %(key, api_url_maintainability.status_code))
+
 
         for key in key_list:
             if key is not None:
                 
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/search?projectKeys=%s&metricKeys=duplicated_lines_density&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_security = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/search?ps=100&projectKeys=%s&metricKeys=security_remediation_effort" %(key), auth=HTTPBasicAuth(username, password))
 
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
+                if api_url_security.status_code == 200:
+                    data = api_url_security.json()
+                    security_debt = (data["measures"][0]["value"])
+                    security_debt = int(security_debt)
+
+                    if ncloc != 0:
+
+                        security_debt = security_debt / 60 # convert minutes to hours
+                        security_debt = security_debt / 8 # hours into working days
+                    
+                        security_debt = (security_debt / (ncloc * 0.06)) * 100
+
+                        # technical debt security
+                        security_debt = ((100 - security_debt) / 100)
+                        if security_debt < 0: security_debt = 0
+                        security_debt = round(security_debt, 2)
+
+                with open('reports/technical_debt_sec.txt', 'a') as f:
+                    f.write(' %s: %s \r      ' %(key, security_debt))    
+
+            else:
+                print('Error: %s: %s' %(key, api_url_security.status_code))
+
+        for key in key_list:
+            if key is not None:
+                
+                api_url_duplicated = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/search?projectKeys=%s&metricKeys=duplicated_lines_density&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+
+                if api_url_duplicated.status_code == 200:
+                    data = api_url_duplicated.json()
                     duplicated = data['measures'][0]['value']
                     duplicated = float(data['measures'][0]['value'])
 
-                    duplicated = round((duplicated / ncloc) * 100, 3)
+                    duplicated = round((duplicated / ncloc) * 100, 2)
 
                     """# duplicated code
                     if duplicated > 0: duplicated = 0.5
@@ -128,100 +155,108 @@ def get_values(request, key_list, sonar, total, measure, value, ncloc, maintaina
 
                     with open('reports/duplicated_lines.txt', 'a') as f:
                         f.write(' %s: %s \r      ' %(key, duplicated))
-                else:
-                    print('Error: %s' %(api_url_sev.status_code))
+            else:
+                print('Error: %s: %s' %(key, api_url_duplicated.status_code))
 
         for key in key_list:
             if key is not None:
                 
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=security_rating&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_sec_rating = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=security_rating&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
-                    measure = data['component']['measures'] # get the value of the metric
-                    for value in measure:
-                        measure = value['value'].replace('1.0', 'A').replace('2.0', 'B').replace('3.0', 'C').replace('4.0', 'D').replace('5.0', 'E') # replace the letter with a number
+                if api_url_sec_rating.status_code == 200:
+                    data = api_url_sec_rating.json()
+                    security_rating = data['component']['measures'] # get the value of the metric
+                    for value in security_rating:
+                        security_rating = value['value'].replace('1.0', 'A').replace('2.0', 'B').replace('3.0', 'C').replace('4.0', 'D').replace('5.0', 'E') # replace the letter with a number
 
-                        if measure == 'A':
-                           measure = "100"
-                        elif measure == 'B':
-                            measure = "70"
-                        elif measure == 'C':
-                            measure = "40"
-                        elif measure == 'D':
-                            measure = "20"
-                        elif measure == 'E':
-                            measure = "0"
+                        if security_rating == 'A':
+                           security_rating = "100"
+                        elif security_rating == 'B':
+                            security_rating = "70"
+                        elif security_rating == 'C':
+                            security_rating = "40"
+                        elif security_rating == 'D':
+                            security_rating = "20"
+                        elif security_rating == 'E':
+                            security_rating = "0"
 
                     with open('reports/security-rating.txt', 'a') as f:
-                        f.write(' %s: %s \r      ' %(key, measure))    
-                else:
-                    print('Error: %s' %(api_url_sev.status_code))
+                        f.write(' %s: %s \r      ' %(key, security_rating))    
+            else:
+                print('Error: %s: %s' %(key, api_url_sec_rating.status_code))
 
         for key in key_list:
             if key is not None:
                 
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_vulnerabilities = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
-                    total = data['total']
+                if api_url_vulnerabilities.status_code == 200:
+                    data = api_url_vulnerabilities.json()
+                    vulnerabilities = int(data['total'])
                     with open('reports/vulnerabilities.txt', 'a') as f:
-                        f.write(' %s: %s \r      ' %(key, total))    
-                else:
-                    print('Error: %s' %(api_url_sev.status_code))
+                        f.write(' %s: %s \r      ' %(key, vulnerabilities))    
+            else:
+                print('Error: %s: %s' %(key, api_url_vulnerabilities.status_code))
 
         for key in key_list:
             if key is not None:
                 
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=BLOCKER&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_sblocker = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=BLOCKER&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
-                    total = data['total']
+                if api_url_sblocker .status_code == 200:
+                    data = api_url_sblocker .json()
+                    sblocker = int(data['total'])
                     with open('reports/vulnerabilities-blocker.txt', 'a') as f:
-                        f.write(' %s: %s \r      ' %(key, total))    
-                else:
-                    print('Error: %s' %(api_url_sev.status_code))
+                        f.write(' %s: %s \r      ' %(key, sblocker))    
+            else:
+                print('Error: %s: %s' %(key, api_url_sblocker.status_code))
 
         for key in key_list:
             if key is not None:
                 
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_scritical = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
-                    total = data['total']
+                if api_url_scritical.status_code == 200:
+                    data = api_url_scritical.json()
+                    scritical = int(data['total'])
                     with open('reports/vulnerabilities-critical.txt', 'a') as f:
-                        f.write(' %s: %s \r      ' %(key, total))    
-                else:
-                    print('Error: %s' %(api_url_sev.status_code))  
+                        f.write(' %s: %s \r      ' %(key, scritical))    
+            else:
+                print('Error: %s: %s' %(key, api_url_scritical.status_code))  
 
         for key in key_list:
             if key is not None:
                 
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=CODE_SMELL,BUG,VULNERABILITY&severities=BLOCKER&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_blocker = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=CODE_SMELL,BUG&severities=BLOCKER&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
-                    total = data['total']
-                    with open('reports/total-severities-blocker.txt', 'a') as f:
-                        f.write(' %s: %s \r      ' %(key, total))    
-                else:
-                    print('Error: %s' %(api_url_sev.status_code))   
+                if api_url_blocker.status_code == 200:
+                    data = api_url_blocker.json()
+                    blocker = int(data['total'])
+                    if blocker < sblocker: 
+                        with open('reports/total-error-blocker.txt', 'a') as f:
+                            f.write(' %s: %s \r      ' %(key, blocker))
+                    else:
+                        with open('reports/total-severities-blocker.txt', 'a') as f:
+                            f.write(' %s: %s \r      ' %(key, blocker))    
+            else:
+                print('Error: %s: %s' %(key, api_url_blocker.status_code))   
 
         for key in key_list:
             if key is not None:
                 
-                api_url_sev = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=CODE_SMELL,BUG,VULNERABILITY&severities=CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_critical = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=CODE_SMELL,BUG&severities=CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
 
-                if api_url_sev.status_code == 200:
-                    data = api_url_sev.json()
-                    total = data['total']
-                    with open('reports/total-severities-critical.txt', 'a') as f:
-                        f.write(' %s: %s \r      ' %(key, total))    
-                else:
-                    print('Error: %s' %(api_url_sev.status_code))
+                if api_url_critical.status_code == 200:
+                    data = api_url_critical.json()
+                    critical = int(data['total'])
+                    if critical < scritical:
+                        with open('reports/total-error-critical.txt', 'a') as f:
+                            f.write(' %s: %s \r      ' %(key, critical))
+                    else:
+                        with open('reports/total-severities-critical.txt', 'a') as f:
+                            f.write(' %s: %s \r      ' %(key, critical))    
+            else:
+                print('Error: %s: %s' %(key, api_url_critical.status_code))
             
                         
     except Exception as error:
@@ -229,4 +264,4 @@ def get_values(request, key_list, sonar, total, measure, value, ncloc, maintaina
     
 if __name__ == "__main__":
 
-    get_values(request=None, key_list=['key'], sonar=None, total=['total'], measure=['measure'], value=['value'], ncloc=['ncloc'], maintainability=['maintainability'], duplicated=['duplicated'], debt_sec=['debt_sec'])
+    get_values(request=None, key_list=['key'], sonar=None, ncloc=['ncloc'], maintainability=['maintainability'], duplicated=['duplicated'], security_debt=['security_debt'], reliability=['reliability'], technical_debt=['technical_debt'], security_rating=['security_rating'], vulnerabilities=['vulnerabilities'], sblocker=['sblocker'], scritical=['scritical'], blocker=['blocker'], critical=['critical'])
