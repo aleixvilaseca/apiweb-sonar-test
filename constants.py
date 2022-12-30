@@ -1,6 +1,3 @@
-SONAR_USER = 'admin'
-SONAR_PASSWORD = 'CroLeveStM'
-
 # Applications to exclude
 APPLICATIONS_TO_EXCLUDE = [
     "0192-Incasol.OBI",
@@ -22,3 +19,9 @@ APPLICATIONS_TO_EXCLUDE = [
     "null-null",
     "cat.gencat.ctti.sic:RemedyWSClient"
 ]
+
+# URLs to get the list of metrics from SonarQube
+GET_NCLOC_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=ncloc&ps=100"
+GET_MAINTAINABILITY_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=sqale_debt_ratio&ps=100"
+GET_RELIABILITY_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=reliability_rating&ps=100"
+GET_SECURITY_EFFORT_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/search?ps=100&projectKeys=%s&metricKeys=security_remediation_effort"

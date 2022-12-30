@@ -19,8 +19,12 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
 
     print('Connection to Sonarqube')
     url = "https://codi.qualitat.solucions.gencat.cat/"
-    username = constants.SONAR_USER
-    password = constants.SONAR_PASSWORD
+
+    with open('fixtures/config.json') as f:
+        config = json.load(f)
+    username = config['SONAR_USER']
+    password = config['SONAR_PASSWORD']
+
     sonar = SonarQubeClient(url, username, password)
 
     print('Getting all projects')
@@ -51,7 +55,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
 
                 continue
                 
-            api_url_ncloc = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=ncloc&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+            api_url_ncloc = requests.get(constants.GET_NCLOC_URL %(key), auth=HTTPBasicAuth(username, password))
 
             if api_url_ncloc.status_code == 200:
                 data = api_url_ncloc.json()
@@ -67,7 +71,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
         for key in key_list:
             if key is not None:
                 
-                api_url_maintainability = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=sqale_debt_ratio&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_maintainability = requests.get(constants.GET_MAINTAINABILITY_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_maintainability.status_code == 200:
                     data = api_url_maintainability.json()
@@ -78,7 +82,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
 
                     maintainability = float(maintainability)
 
-                api_url_reliability = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=reliability_rating&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_reliability = requests.get(constants.GET_RELIABILITY_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_reliability.status_code == 200:
                     data = api_url_reliability.json()
@@ -111,7 +115,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
         for key in key_list:
             if key is not None:
                 
-                api_url_security = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/search?ps=100&projectKeys=%s&metricKeys=security_remediation_effort" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_security = requests.get(constants.GET_SECURITY_EFFORT_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_security.status_code == 200:
                     data = api_url_security.json()
@@ -139,12 +143,15 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
         for key in key_list:
             if key is not None:
                 
-                api_url_duplicated = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/search?projectKeys=%s&metricKeys=duplicated_lines_density&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_duplicated = requests.get(constants.GET_DUPLICATED_LINES_UR %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_duplicated.status_code == 200:
                     data = api_url_duplicated.json()
-                    duplicated = data['measures'][0]['value']
-                    duplicated = float(data['measures'][0]['value'])
+                    if data["measures"] == []:
+                        duplicated = 0
+                    else:
+                        duplicated = data['measures'][0]['value']
+                        duplicated = float(data['measures'][0]['value'])
 
                     duplicated = round((duplicated / ncloc) * 100, 2)
 
@@ -161,7 +168,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
         for key in key_list:
             if key is not None:
                 
-                api_url_sec_rating = requests.get("https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=security_rating&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_sec_rating = requests.get(constants.GET_SECURITY_RATING_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_sec_rating.status_code == 200:
                     data = api_url_sec_rating.json()
@@ -188,7 +195,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
         for key in key_list:
             if key is not None:
                 
-                api_url_vulnerabilities = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_vulnerabilities = requests.get(constants.GET_VULNERABILITIES_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_vulnerabilities.status_code == 200:
                     data = api_url_vulnerabilities.json()
@@ -201,7 +208,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
         for key in key_list:
             if key is not None:
                 
-                api_url_sblocker = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=BLOCKER&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_sblocker = requests.get(constants.GET_SECURITY_BLOCKER_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_sblocker .status_code == 200:
                     data = api_url_sblocker .json()
@@ -214,7 +221,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
         for key in key_list:
             if key is not None:
                 
-                api_url_scritical = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=VULNERABILITY&severities=CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_scritical = requests.get(constants.GET_SECURITY_CRITICAL_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_scritical.status_code == 200:
                     data = api_url_scritical.json()
@@ -227,34 +234,32 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
         for key in key_list:
             if key is not None:
                 
-                api_url_blocker = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=CODE_SMELL,BUG&severities=BLOCKER&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_blocker = requests.get(constants.GET_BLOCKER_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_blocker.status_code == 200:
                     data = api_url_blocker.json()
                     blocker = int(data['total'])
-                    if blocker < sblocker: 
-                        with open('reports/total-error-blocker.txt', 'a') as f:
-                            f.write(' %s: %s \r      ' %(key, blocker))
-                    else:
-                        with open('reports/total-severities-blocker.txt', 'a') as f:
-                            f.write(' %s: %s \r      ' %(key, blocker))    
+                    with open('reports/total-severity-blocker.txt', 'a') as f:
+                        f.write(' %s: %s \r      ' %(key, blocker))
+                if blocker < sblocker: 
+                    with open('reports/total-error-blocker.txt', 'a') as f:
+                        f.write(' %s: %s \r      ' %(key, blocker))
             else:
                 print('Error: %s: %s' %(key, api_url_blocker.status_code))   
 
         for key in key_list:
             if key is not None:
                 
-                api_url_critical = requests.get("https://codi.qualitat.solucions.gencat.cat/api/issues/search?componentKeys=%s&types=CODE_SMELL,BUG&severities=CRITICAL&ps=100" %(key), auth=HTTPBasicAuth(username, password))
+                api_url_critical = requests.get(constants.GET_CRITICAL_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_critical.status_code == 200:
                     data = api_url_critical.json()
                     critical = int(data['total'])
-                    if critical < scritical:
-                        with open('reports/total-error-critical.txt', 'a') as f:
-                            f.write(' %s: %s \r      ' %(key, critical))
-                    else:
-                        with open('reports/total-severities-critical.txt', 'a') as f:
-                            f.write(' %s: %s \r      ' %(key, critical))    
+                    with open('reports/total-severity-critical.txt', 'a') as f:
+                        f.write(' %s: %s \r      ' %(key, critical))
+                if critical < scritical: 
+                    with open('reports/total-error-critical.txt', 'a') as f:
+                        f.write(' %s: %s \r      ' %(key, critical))
             else:
                 print('Error: %s: %s' %(key, api_url_critical.status_code))
             
