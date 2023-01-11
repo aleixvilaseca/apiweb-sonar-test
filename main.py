@@ -15,7 +15,7 @@ from django.http import HttpResponse
 from tqdm import tqdm as pretty_progress_bar
 
 
-def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, security_debt, reliability, technical_debt, security_rating, vulnerabilities, sblocker, scritical, blocker, critical): 
+def get_values(request, key_list, lastAnalysisDate, sonar, ncloc, maintainability, duplicated, security_debt, reliability, technical_debt, security_rating, vulnerabilities, sblocker, scritical, blocker, critical): 
 
     print('Connection to Sonarqube')
     url = "https://codi.qualitat.solucions.gencat.cat/"
@@ -44,6 +44,15 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
             key_list.remove(string)
 
     key_list = str(key_list).replace('[', '').replace(']', '').replace("'", "").replace(" ", "").split(',') # remove the brackets from the list (not needed for the API
+
+    lastAnalysisDate = []
+    for key in sonar:
+        if key.get('lastAnalysisDate') is not None:
+            lastAnalysisDate.append((key['key'], key['lastAnalysisDate']))
+            projects_date = "\n".join([f"{p[0]},{p[1]}" for p in lastAnalysisDate])
+        
+        with open('reports/lastAnalysisDate.txt', 'w') as f:
+            f.write(projects_date)
     
     try:
 
@@ -270,4 +279,4 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
     
 if __name__ == "__main__":
 
-    get_values(request=None, key_list=['key'], sonar=None, ncloc=['ncloc'], maintainability=['maintainability'], duplicated=['duplicated'], security_debt=['security_debt'], reliability=['reliability'], technical_debt=['technical_debt'], security_rating=['security_rating'], vulnerabilities=['vulnerabilities'], sblocker=['sblocker'], scritical=['scritical'], blocker=['blocker'], critical=['critical'])
+    get_values(request=None, key_list=['key'], lastAnalysisDate=['lastAnalysisDate'], sonar=None, ncloc=['ncloc'], maintainability=['maintainability'], duplicated=['duplicated'], security_debt=['security_debt'], reliability=['reliability'], technical_debt=['technical_debt'], security_rating=['security_rating'], vulnerabilities=['vulnerabilities'], sblocker=['sblocker'], scritical=['scritical'], blocker=['blocker'], critical=['critical'])
