@@ -23,7 +23,7 @@ APPLICATIONS_TO_EXCLUDE = [
 # URLs to get the list of metrics from SonarQube
 GET_NCLOC_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=ncloc&ps=100"
 GET_MAINTAINABILITY_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=sqale_debt_ratio&ps=100"
-GET_RELIABILITY_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=reliability_rating&ps=100"
+GET_RELIABILITY_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=reliability_remediation_effort&ps=100"
 GET_SECURITY_EFFORT_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/search?ps=100&projectKeys=%s&metricKeys=security_remediation_effort"
 GET_DUPLICATED_LINES_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/search?projectKeys=%s&metricKeys=duplicated_lines_density&ps=100"
 GET_SECURITY_RATING_URL = "https://codi.qualitat.solucions.gencat.cat/api/measures/component?component=%s&metricKeys=security_rating&ps=100"

@@ -1,5 +1,4 @@
 venv/
 reports/
-fixtures/
 .vscode/
 *.pyc

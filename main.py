@@ -35,7 +35,6 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
         key_list.append(key['key']) # append the project key to a list
 
     for key in range(len(key_list)):
-        #(key_list[key]) = ''.join([key for key in key_list if key != [constants.APPLICATIONS_TO_EXCLUDE]]) # fer servir replace
         if key_list[key] == '0192-0206-tributs':
             key_list[key] = key_list[key].replace('0192-', '', 1)
         
@@ -45,11 +44,10 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
             key_list.remove(string)
 
     key_list = str(key_list).replace('[', '').replace(']', '').replace("'", "").replace(" ", "").split(',') # remove the brackets from the list (not needed for the API
-
-    print('Getting values for project') 
     
     try:
 
+        print('Getting NCLOC')
         for key in key_list:
             if key is None or key == "":
 
@@ -68,6 +66,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
             else:
                 print('Error: %s: %s' %(key, api_url_ncloc.status_code))
 
+        print('Getting Technical Debt')
         for key in key_list:
             if key is not None:
                 
@@ -112,6 +111,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
                 print('Error: %s: %s' %(key, api_url_maintainability.status_code))
 
 
+        print('Getting Technical Debt Security')
         for key in key_list:
             if key is not None:
                 
@@ -140,10 +140,11 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
             else:
                 print('Error: %s: %s' %(key, api_url_security.status_code))
 
+        print('Getting Duplicated Code')
         for key in key_list:
             if key is not None:
                 
-                api_url_duplicated = requests.get(constants.GET_DUPLICATED_LINES_UR %(key), auth=HTTPBasicAuth(username, password))
+                api_url_duplicated = requests.get(constants.GET_DUPLICATED_LINES_URL %(key), auth=HTTPBasicAuth(username, password))
 
                 if api_url_duplicated.status_code == 200:
                     data = api_url_duplicated.json()
@@ -152,19 +153,14 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
                     else:
                         duplicated = data['measures'][0]['value']
                         duplicated = float(data['measures'][0]['value'])
-
-                    duplicated = round((duplicated / ncloc) * 100, 2)
-
-                    """# duplicated code
-                    if duplicated > 0: duplicated = 0.5
-                    elif duplicated == 0: duplicated = 1
-                    else: duplicated = 0"""
+                        duplicated = round(duplicated, 2)
 
                     with open('reports/duplicated_lines.txt', 'a') as f:
                         f.write(' %s: %s \r      ' %(key, duplicated))
             else:
                 print('Error: %s: %s' %(key, api_url_duplicated.status_code))
 
+        print('Getting Security Rating')
         for key in key_list:
             if key is not None:
                 
@@ -192,6 +188,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
             else:
                 print('Error: %s: %s' %(key, api_url_sec_rating.status_code))
 
+        print('Getting Vulnerabilities')
         for key in key_list:
             if key is not None:
                 
@@ -205,6 +202,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
             else:
                 print('Error: %s: %s' %(key, api_url_vulnerabilities.status_code))
 
+        print('Getting Security Blocker')
         for key in key_list:
             if key is not None:
                 
@@ -218,6 +216,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
             else:
                 print('Error: %s: %s' %(key, api_url_sblocker.status_code))
 
+        print('Getting Security Critical')
         for key in key_list:
             if key is not None:
                 
@@ -231,6 +230,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
             else:
                 print('Error: %s: %s' %(key, api_url_scritical.status_code))  
 
+        print('Getting Blocker')
         for key in key_list:
             if key is not None:
                 
@@ -247,6 +247,7 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
             else:
                 print('Error: %s: %s' %(key, api_url_blocker.status_code))   
 
+        print('Getting Critical')
         for key in key_list:
             if key is not None:
                 
