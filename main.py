@@ -1,24 +1,19 @@
 import requests
 import json
-import csv
 import sys
 import constants
-import openpyxl
 import os
 import urllib3
 import pyslurpers
 from sonarqube import SonarQubeClient
-from openpyxl.workbook import workbook
 from requests.auth import HTTPBasicAuth
-from os.path import exists
 from django.http import HttpResponse
-from tqdm import tqdm as pretty_progress_bar
 
 
 def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, security_debt, reliability, technical_debt, security_rating, vulnerabilities, sblocker, scritical, blocker, critical): 
 
     print('Connection to Sonarqube')
-    url = "https://codi.qualitat.solucions.gencat.cat/"
+    url = "https://localhost:9000"
 
     with open('fixtures/config.json') as f:
         config = json.load(f)
@@ -36,8 +31,8 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
 
     for key in range(len(key_list)):
         #(key_list[key]) = ''.join([key for key in key_list if key != [constants.APPLICATIONS_TO_EXCLUDE]]) # fer servir replace
-        if key_list[key] == '0192-0206-tributs':
-            key_list[key] = key_list[key].replace('0192-', '', 1)
+        if key_list[key] == 'xxxxx-xxxxx':
+            key_list[key] = key_list[key].replace('xxxx-', '', 1)
         
     strings_to_remove = constants.APPLICATIONS_TO_EXCLUDE
     for string in strings_to_remove:
@@ -154,11 +149,6 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
                         duplicated = float(data['measures'][0]['value'])
 
                     duplicated = round((duplicated / ncloc) * 100, 2)
-
-                    """# duplicated code
-                    if duplicated > 0: duplicated = 0.5
-                    elif duplicated == 0: duplicated = 1
-                    else: duplicated = 0"""
 
                     with open('reports/duplicated_lines.txt', 'a') as f:
                         f.write(' %s: %s \r      ' %(key, duplicated))
