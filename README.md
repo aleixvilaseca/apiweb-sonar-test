@@ -1,7 +1,7 @@
 # SonarQube API Web 
 - Sonarqube API Web to extract the metrics that I want. This is a first test scenario.
 
-### Prerequisites
+### Prerequisites (Windows)
 
 - You must have installed python > 3.8
 - Create a virtual environment in the project folder:
