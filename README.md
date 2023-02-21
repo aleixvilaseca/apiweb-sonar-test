@@ -1,5 +1,4 @@
-# Sonarqube API Web || https://docs.sonarqube.org/9.6/extension-guide/web-api/
-
+# SonarQube API Web 
 - Sonarqube API Web to extract the metrics that I want. This is a first test scenario.
 
 ### Prerequisites
@@ -23,3 +22,4 @@
   
   
 ![sonar logo](sonarqube.png)
+https://docs.sonarqube.org/9.6/extension-guide/web-api/
