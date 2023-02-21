@@ -5,13 +5,13 @@
 
 - You must have installed python > 3.8
 - Create a virtual environment in the project folder:
-  '''bash
+  ```bash
   python -m venv venv
-  '''
+  ```
 - Install requirements
-  '''bash
+  ```bash
   venv/Scripts/python.exe -m pip install -r requirements.txt
-  '''
+  ```
 
 ### Execution
 
