@@ -1,5 +1,4 @@
 # Sonarqube API Web
-Inline-style:
 ![sonar logo](png-transparent-sonarqube-hd-logo.png)
 
 - Sonarqube API Web to extract the metrics that I want. This is a first test scenario.
