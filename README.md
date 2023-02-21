@@ -1,5 +1,4 @@
 # Sonarqube API Web
-![sonar logo](sonarqube.png)
 
 - Sonarqube API Web to extract the metrics that I want. This is a first test scenario.
 
@@ -21,3 +20,5 @@
 
 - In the top level of the project execute:
   `python main.py`
+
+![sonar logo](sonarqube.png)
