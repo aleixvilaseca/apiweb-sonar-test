@@ -10,7 +10,7 @@ from requests.auth import HTTPBasicAuth
 from django.http import HttpResponse
 
 
-def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, security_debt, reliability, technical_debt, security_rating, vulnerabilities, sblocker, scritical, blocker, critical): 
+def get_values(request, sonar): 
 
     print('Connection to Sonarqube')
     url = "https://localhost:9000"
@@ -259,4 +259,4 @@ def get_values(request, key_list, sonar, ncloc, maintainability, duplicated, sec
     
 if __name__ == "__main__":
 
-    get_values(request=None, key_list=['key'], sonar=None, ncloc=['ncloc'], maintainability=['maintainability'], duplicated=['duplicated'], security_debt=['security_debt'], reliability=['reliability'], technical_debt=['technical_debt'], security_rating=['security_rating'], vulnerabilities=['vulnerabilities'], sblocker=['sblocker'], scritical=['scritical'], blocker=['blocker'], critical=['critical'])
+    get_values(request=None, sonar=None)
